@@ -26,14 +26,13 @@ Parse.Cloud.define("copyInventory", function(request, response) {
                      newRooms.push(newRoom);
                   }
 
-                  Parse.Object.saveAll(newRooms, {
-                                              success: function(objs) {
-                                                  response.success("Saved: " + objs.length);
-                                              },
-                                              error: function(error) {
-                                                 response.error(error);
-                                              }
-                                          });
+                  Parse.Object.saveAll(newRooms, function(list, error) {
+                                                     if (list) {
+                                                       response.success("Hello");
+                                                     } else {
+                                                      response.error(error);
+                                                     }
+                                                   });
 
            });
   });
