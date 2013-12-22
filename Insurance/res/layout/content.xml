@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="false">
+
+
+    <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+
+        <ImageButton
+                android:layout_width="0dip"
+                android:layout_weight="15"
+                android:layout_height="wrap_content"
+                android:id="@+id/save"
+                android:src="@android:drawable/ic_menu_save"
+                android:layout_alignParentLeft="true"
+                />
+
+        <TextView
+                android:layout_width="0dip"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:text="@string/item"
+                />
+
+
+        <EditText
+                android:id="@+id/desc"
+                android:layout_width="0dip"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                />
+
+
+        <ImageButton
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_width="0dip"
+                android:layout_weight="15"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/cost_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/buttons">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:text="Cost:"
+                android:inputType="numberDecimal"
+                android:paddingRight="5dp"
+                />
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:text="Purchase Date:"
+                android:minLines="2"
+                android:inputType="numberDecimal"
+                android:paddingRight="5dp"
+                android:layout_gravity="center_vertical"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/texts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/cost_layout">
+
+        <EditText
+                android:id="@+id/cost"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:hint="Cost"
+                android:inputType="numberDecimal"
+                />
+
+        <DatePicker
+                android:id="@+id/date_purchased"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:hint="Date Purchased"
+                android:inputType="date"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_below="@id/texts"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+        <include
+                android:id="@+id/photoLayout"
+                layout="@layout/photo"/>
+
+        <include
+                android:id="@+id/receiptLayout"
+                layout="@layout/photo"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+

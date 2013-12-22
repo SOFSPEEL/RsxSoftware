@@ -1,0 +1,48 @@
+package com.rsxsoftware.insurance.business;
+
+import com.parse.ParseClassName;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: steve.fiedelberg
+ * Date: 9/29/13
+ * Time: 2:06 PM
+ * To change this template use File | Settings | File Templates.
+ */
+@ParseClassName("Room")
+public class Room extends ParseObjectBase {
+
+    public static final String NAME = "Room";
+
+    public Room() {
+        super(NAME);
+    }
+
+    @Override
+    public String getTableName() {
+        return Room.NAME;
+    }
+
+    @Override
+    public String getChildTableName() {
+        return Content.NAME;
+    }
+
+    @Override
+    public String getParentTableName() {
+        return Inventory.NAME;
+    }
+
+    @Override
+    public ParseObjectBase deepCopy() {
+
+        final Room room = new Room();
+        room.put("desc", get("desc"));
+        return room;
+    }
+
+    @Override
+    protected ParseObjectBase createObject() {
+        return new Room();
+    }
+}

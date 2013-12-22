@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Insurance": {
+            "applicationId": "ORL3ZTS0YA4r0nCNRZ4G7C6pXswluZN0axqAFUAx", 
+            "masterKey": "uLUaUvIqTQI5llIzi4KCH3VtP8zEy0d97dJmvUYF"
+        }, 
+        "_default": {
+            "link": "Insurance"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.15"
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Insurance</string>
+    <string name="are_you_sure" formatted="false">Are you sure you want to delete the %s %s?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="inventories">Inventories:</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="item">Item:</string>
+    <string name="save_as_master">Save As Master</string>
+    <string name="add_predefined">Add Predefined</string>
+    <string name="pick_predifined">Pick pre-defined item</string>
+</resources>
