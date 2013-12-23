@@ -61,18 +61,16 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
         return position;
     }
 
-    protected void handleButtons(final View row, final ParseObjectBase child) {
+    protected void handleButtons(final View row, final ParseObjectBase object) {
 
         final Button buttonChildren = (Button) row.findViewById(R.id.children);
-        final String childTableName = child.getChildTableName();
-        buttonChildren.setText(childTableName);
 
-        child.getTextForDetailsButton(new CountCallback() {
+        final String text = object.initTextForDetailsButton();
+        buttonChildren.setText(text);
+        object.fetchTextForDetailsButton(new CountCallback() {
             @Override
             public void done(int i, ParseException e) {
-
-                buttonChildren.setText(childTableName + "s(" + i + ")");
-
+                buttonChildren.setText(text + "(" + i + ")");
             }
         });
 
@@ -81,7 +79,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
             @Override
             public void onClick(View v) {
 
-                fragment.switchTo(userActivity, newChildFragment(), child, false);
+                fragment.switchTo(userActivity, newChildFragment(), object);
             }
         });
 
@@ -108,7 +106,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
                 return new PopupView(R.string.delete, R.drawable.ic_delete, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        new DeleteItemDialog(child).show(userActivity.getFragmentManager(), "");
+                        new DeleteItemDialog(object).show(userActivity.getFragmentManager(), "");
                     }
                 });
             }
@@ -117,7 +115,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
                 return new PopupView(R.string.edit, R.drawable.ic_menu_edit, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        fragment.switchTo(userActivity, newChildFragment(), child, false);
+                        fragment.switchTo(userActivity, newChildFragment(), object);
 
 
                     }
@@ -129,12 +127,13 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
              * later copy it as a starting point for their inventory/room/etc.
              */
             private PopupView addSaveCopyAsMaster() {
+
                 return new PopupView(R.string.save_as_master, android.R.drawable.ic_menu_save, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        child.put("master", true);
-                        child.saveEventually();
+                        object.put("master", true);
+                        object.saveEventually();
                     }
                 });
             }

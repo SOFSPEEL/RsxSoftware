@@ -52,11 +52,11 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         return parseObjects;
     }
 
-    public void switchTo(UserActivity userActivity, FragmentBase fragmentTo, ParseObjectInterface selected, boolean add) {
+    public void switchTo(UserActivity userActivity, FragmentBase fragmentTo, ParseObjectInterface selected) {
 
         if (fragmentTo != null) {
 
-            replaceFragment(userActivity, fragmentTo, add);
+            replaceFragment(userActivity, fragmentTo);
 
             fragmentTo.setSelected(selected);
             if (fragmentTo instanceof ListFragment) {
@@ -66,14 +66,9 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         }
     }
 
-    private void replaceFragment(UserActivity userActivity, FragmentBase listWithAdapterFragment, boolean add) {
+    private void replaceFragment(UserActivity userActivity, FragmentBase listWithAdapterFragment) {
         final FragmentTransaction transaction = userActivity.getFragmentManager().beginTransaction();
-        final int id = R.id.fragment_container;
-        if (add) {
-            transaction.add(id, listWithAdapterFragment).commit();
-        } else {
-            transaction.replace(id, listWithAdapterFragment).addToBackStack(null).commit();
-        }
+        transaction.replace(R.id.fragment_container, listWithAdapterFragment).addToBackStack(null).commit();
     }
 
 
@@ -126,7 +121,4 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
             }
         };
     }
-
-
-    public abstract boolean hasDetail();
 }

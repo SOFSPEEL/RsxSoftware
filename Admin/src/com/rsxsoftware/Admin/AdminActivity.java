@@ -1,6 +1,7 @@
 package com.rsxsoftware.Admin;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -90,8 +91,21 @@ public class AdminActivity extends Activity {
 
     public void loadCsv(View view) throws IOException {
 
+        new AsyncTask<Void, Void, Void>() {
+            @Override
+            protected Void doInBackground(Void... params) {
+                try {
+                    doLoadCsv();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        }.execute();
 
+    }
 
+    private void doLoadCsv() throws Exception {
         final HashMap<String, List<String>> map = new HashMap<String, List<String>>();
         final List csv = FileUtils.readLines(new File("mnt/sdcard", "HomeInventory.csv"));
         for (Object obj : csv) {
@@ -107,25 +121,42 @@ public class AdminActivity extends Activity {
         }
 
         final ParseObject inv = new ParseObject("Inventory");
-        setParms(inv, "Master Inventory");
-        inv.saveEventually();
+        setParms(inv, "Master Inventory", true).save();
+        final HashMap<String, ParseObject> mapContents = new HashMap<String, ParseObject>();
+
 
         for (Map.Entry<String, List<String>> entry : map.entrySet()) {
             final ParseObject room = new ParseObject("Room");
-            setParms(room, entry.getKey());
-            room.put("inventory", inv);
-            room.saveEventually();
+
+            final ParseRelation<ParseObject> inventories = room.getRelation("inventories");
+            setParms(room, entry.getKey(), false);
+
+            inventories.add(inv);
+            room.save();
+
             for (String content : entry.getValue()) {
-                final ParseObject contentObj = new ParseObject("Content");
-                setParms(contentObj, content);
+
+                ParseObject contentObj = mapContents.get(content);
+                if (contentObj == null) {
+                    contentObj = new ParseObject("Content");
+                    setParms(contentObj, content, false);
+                    mapContents.put(content, contentObj);
+
+                }
+
+                final ParseRelation<ParseObject> rooms = contentObj.getRelation("rooms");
+                rooms.add(room);
                 contentObj.put("room", room);
-                contentObj.saveEventually();
+                contentObj.save();
             }
         }
+
+
     }
 
-    private void setParms(ParseObject obj, String desc) {
+    private ParseObject setParms(ParseObject obj, String desc, boolean master) {
         obj.put("desc", desc);
-        obj.put("master", true);
+        obj.put("master", master);
+        return obj;
     }
 }

@@ -33,11 +33,6 @@ public class ContentsFragment extends ListFragment<Content> {
     }
 
     @Override
-    public boolean hasDetail() {
-        return true;
-    }
-
-    @Override
     protected Content newObjectInstance() {
         return new Content();
     }

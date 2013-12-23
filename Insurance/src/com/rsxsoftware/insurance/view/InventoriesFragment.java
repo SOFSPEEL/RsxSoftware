@@ -55,12 +55,6 @@ public class InventoriesFragment extends ListFragment<Inventory> {
     }
 
 
-
-    @Override
-    public boolean hasDetail() {
-        return false;
-    }
-
     @Override
     protected Inventory newObjectInstance() {
         return new Inventory();

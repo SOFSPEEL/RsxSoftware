@@ -3,10 +3,8 @@ package com.rsxsoftware.insurance.view;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import com.parse.ParseAnalytics;
-import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.rsxsoftware.insurance.R;
 
@@ -35,6 +33,9 @@ public class UserActivity extends Activity {
         return objectIds;
     }
 
+
+
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
@@ -43,43 +44,31 @@ public class UserActivity extends Activity {
 
         ParseUser.enableAutomaticUser();
 
-        new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... params) {
-                final HashMap<String, String> map = new HashMap<String, String>();
-                map.put("Junka", "junk1");
-                map.put("Junkb", "junk2");
+        final LoginFragment loginFragment = new LoginFragment();
+        getFragmentManager().beginTransaction().add(R.id.fragment_container, loginFragment).commit();
 
-                final UserActivity context = UserActivity.this;
-                saveArray(context, map);
-                final Set<String> strings = fetchArray(context);
+//        new AsyncTask<Void, Void, Void>() {
+//            @Override
+//            protected Void doInBackground(Void... params) {
+//                final HashMap<String, String> map = new HashMap<String, String>();
+//                map.put("Junka", "junk1");
+//                map.put("Junkb", "junk2");
+//
+//                final UserActivity context = UserActivity.this;
+////                saveArray(context, map);
+//                final Set<String> strings = fetchArray(context);
+//
+//                return null;
+//            }
+//
+//
+//        }.execute();
 
-                return null;
-            }
-
-
-        }.execute();
-
-
-        loginUser();
-
-    }
-
-    private void loginUser() {
-
-        final ParseUser currentUser;
-        try {
-            currentUser = ParseUser.logIn("Steve", "Junk");
-
-            new InventoriesFragment().switchTo(this, new InventoriesFragment(), new UserFacade(currentUser), true);
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-//        final ParseUser currentUser = ParseUser.getCurrentUser();
 
 
     }
+
+
 
 //    private void loginUser() {
 ////        final ParseUser user = new ParseUser();

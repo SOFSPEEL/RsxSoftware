@@ -9,9 +9,9 @@ import com.parse.ParseObject;
 public interface ParseObjectInterface {
     String getTableName();
 
-    String getChildTableName();
+    String getRelationName();
 
-    String getParentTableName();
+    ParseObjectInterface createChildObject();
 
     void fetchList(FindCallback updateListCallback);
 

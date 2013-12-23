@@ -24,17 +24,22 @@ public class Content extends ParseObjectBase {
     }
 
     @Override
-    public String getChildTableName() {
-        return "Picx";
+    public String getRelationName() {
+        return "rooms";
     }
 
     @Override
-    public String getParentTableName() {
-        return Room.NAME;
+    public String initTextForDetailsButton() {
+        return "Pic";
     }
 
     @Override
-    public void getTextForDetailsButton(CountCallback callback) {
+    public ParseObjectInterface createChildObject() {
+        return null;
+    }
+
+    @Override
+    public void fetchTextForDetailsButton(CountCallback callback) {
         callback.done(count("receipt") + count("photo"), null);
     }
 
@@ -53,5 +58,4 @@ public class Content extends ParseObjectBase {
     protected ParseObjectBase createObject() {
         return new Content();
     }
-
 }

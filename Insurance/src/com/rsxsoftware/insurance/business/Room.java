@@ -24,13 +24,13 @@ public class Room extends ParseObjectBase {
     }
 
     @Override
-    public String getChildTableName() {
-        return Content.NAME;
+    public String getRelationName() {
+        return "inventories";
     }
 
     @Override
-    public String getParentTableName() {
-        return Inventory.NAME;
+    public ParseObjectInterface createChildObject() {
+        return new Content();
     }
 
     @Override

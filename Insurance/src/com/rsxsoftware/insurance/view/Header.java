@@ -1,13 +1,12 @@
 package com.rsxsoftware.insurance.view;
 
 import android.app.*;
+import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import com.parse.FindCallback;
-import com.parse.ParseException;
-import com.parse.ParseQuery;
+import com.parse.*;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.Inventory;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
@@ -70,6 +69,9 @@ public class Header<TList extends ParseObjectBase> {
             public void onClick(View v) {
 
                 final ProgressFragment progressFragment = new ProgressFragment();
+                final Bundle args = new Bundle();
+                args.putString("title", "Fetching");
+                progressFragment.setArguments(args);
                 final FragmentManager fragmentManager = userActivity.getFragmentManager();
                 progressFragment.show(fragmentManager.beginTransaction(), "dialog");
 
@@ -111,7 +113,8 @@ public class Header<TList extends ParseObjectBase> {
                     autoComplete.setText("");
                     final TList newObject = listFragment.newObjectInstance();
                     newObject.put("desc", value);
-                    newObject.put(newObject.getParentTableName().toLowerCase(), listFragment.getRealObject());
+                    final ParseRelation<ParseObject> relation = newObject.getRelation(newObject.getRelationName());
+                    relation.add(listFragment.getRealObject());
                     newObject.saveEventually();
                     listFragment.addToAdapter(newObject);
                 }

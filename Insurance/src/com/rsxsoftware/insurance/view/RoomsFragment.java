@@ -32,11 +32,6 @@ public class RoomsFragment extends ListFragment<Room> {
 
 
     @Override
-    public boolean hasDetail() {
-        return false;
-    }
-
-    @Override
     protected Room newObjectInstance() {
         return new Room();
     }

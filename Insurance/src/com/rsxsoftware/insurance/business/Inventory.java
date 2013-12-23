@@ -22,9 +22,6 @@ public class Inventory extends ParseObjectBase {
     @Override
     public ParseObjectBase deepCopy() {
         final ParseObjectBase copy = super.deepCopy();
-
-
-
         return copy;
     }
 
@@ -35,20 +32,20 @@ public class Inventory extends ParseObjectBase {
 
 
     @Override
-    public String getParentTableName() {
-        return "user";
-    }
-
-
-    @Override
     public String getTableName() {
         return Inventory.NAME;
     }
 
     @Override
-    public String getChildTableName() {
-        return Room.NAME;
+    public String getRelationName() {
+        return "users";
     }
+
+    @Override
+    public ParseObjectInterface createChildObject() {
+        return new Room();
+    }
+
 
 
 }
