@@ -1,17 +1,19 @@
 package com.rsxsoftware.insurance.view;
 
-import android.app.*;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
 import com.parse.*;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.Inventory;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -29,26 +31,36 @@ public class Header<TList extends ParseObjectBase> {
     }
 
 
-    public void setup(View header) {
+    public void setup(final View header) {
 
-        final String[] selections = listFragment.getSelections();
-        Arrays.sort(selections);
+        listFragment.fetchSelections(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> list, ParseException e) {
 
-        final InstantAutoComplete autoComplete = setupAutoComplete(header, selections);
+                final AutoCompleteTextView autoComplete = setupAutoComplete(header, list);
+                handleAddButton(header, autoComplete);
+            }
+        });
 
-        handleAddButton(header, autoComplete);
+
         handleRefreshButton(header);
         handleAddPredefined(header);
 
     }
 
-    private InstantAutoComplete setupAutoComplete(View header, String[] selections) {
-        final InstantAutoComplete autoComplete = (InstantAutoComplete) header.findViewById(R.id.autoComplete);
+    private AutoCompleteTextView setupAutoComplete(View header, final List<ParseObject> selections) {
+        final AutoCompleteTextView autoComplete = (AutoCompleteTextView) header.findViewById(R.id.autoComplete);
 
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(header.getContext(),
-                android.R.layout.simple_dropdown_item_1line, selections);
+        final ArrayAdapter<ParseObject> adapter = new ArrayAdapter<ParseObject>(header.getContext(),
+                android.R.layout.simple_dropdown_item_1line, selections){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                final TextView tv = (TextView) super.getView(position, convertView, parent);
+                                 tv.setText(selections.get(position).getString("desc"));
+                return tv;
+            }
+        };
         autoComplete.setAdapter(adapter);
-        autoComplete.setThreshold(300);
         autoComplete.setHint(listFragment.getHint());
 //        autoComplete.setText("");
         autoComplete.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +113,7 @@ public class Header<TList extends ParseObjectBase> {
         });
     }
 
-    private void handleAddButton(View header, final InstantAutoComplete autoComplete) {
+    private void handleAddButton(View header, final AutoCompleteTextView autoComplete) {
         header.findViewById(R.id.addButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

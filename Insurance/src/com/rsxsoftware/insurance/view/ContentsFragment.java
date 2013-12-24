@@ -14,17 +14,9 @@ public class ContentsFragment extends ListFragment<Content> {
     public ContentsFragment() {
     }
 
-
-
-
     @Override
     protected ListAdapter createAdapter() {
         return new ContentAdapter(getParseObjects());
-    }
-
-    @Override
-    protected String[] getSelections() {
-        return new String[0];
     }
 
     @Override

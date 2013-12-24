@@ -1,40 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent">
-
-        <EditText
-                android:id="@+id/user"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"/>
-
-        <EditText
-                android:id="@+id/password"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                />
-
-        <Button
-                android:id="@+id/loginButton"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                />
-
-    </LinearLayout>
-
-    <ProgressBar
-            android:layout_width="wrap_content"
+    <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:id="@+id/user"/>
 
-</ViewSwitcher>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"/>
 
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginButton"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/buttonSignUp"/>
+</LinearLayout>

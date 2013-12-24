@@ -11,6 +11,7 @@ import android.widget.ListView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 import com.rsxsoftware.insurance.business.ParseObjectInterface;
@@ -82,8 +83,11 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
 
     protected abstract ListAdapter createAdapter();
 
-    protected abstract String[] getSelections();
+    protected void fetchSelections(FindCallback callback) {
 
+        new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc").findInBackground(callback);
+
+    }
     protected abstract String getHint();
 
     @Override

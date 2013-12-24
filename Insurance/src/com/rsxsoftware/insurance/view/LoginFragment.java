@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.widget.ViewSwitcher;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -23,26 +22,25 @@ public class LoginFragment extends Fragment {
     private EditText user;
     private EditText password;
     private View loginButton;
-    private ViewSwitcher switcher;
+    private View layout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        switcher = (ViewSwitcher) inflater.inflate(R.layout.login, null);
-        user = (EditText) switcher.findViewById(R.id.user);
+        layout = inflater.inflate(R.layout.login, null);
+        user = (EditText) layout.findViewById(R.id.user);
         user.setText("Steve");
-        password = (EditText) switcher.findViewById(R.id.password);
+        password = (EditText) layout.findViewById(R.id.password);
         password.setText("Junk");
-        loginButton = switcher.findViewById(R.id.loginButton);
+        loginButton = layout.findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switcher.showNext();
                 retryLogin();
             }
         });
 
-        return switcher;
+        return layout;
 
     }
 
@@ -60,7 +58,6 @@ public class LoginFragment extends Fragment {
         progressFragment.setArguments(args);
         progressFragment.show(getFragmentManager().beginTransaction(), "dialog");
 
-
         ParseUser.logInInBackground(user.getText().toString(), password.getText().toString(), new LogInCallback() {
             @Override
             public void done(ParseUser currentUser, ParseException e) {
@@ -68,7 +65,6 @@ public class LoginFragment extends Fragment {
 
                 if (e != null) {
                     Toast.makeText(getActivity(), "Failed to login: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                    switcher.showNext();
                 } else {
                     new InventoriesFragment().switchTo(activity, new InventoriesFragment(), new UserFacade(currentUser));
                 }

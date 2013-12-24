@@ -21,35 +21,6 @@ public class InventoriesFragment extends ListFragment<Inventory> {
     }
 
     @Override
-    protected String[] getSelections() {
-        return new String[]{"Living"
-                ,
-                "Dining"
-                ,
-                "Family"
-                ,
-                "Kitchen/Laundry"
-                ,
-                "Bathrooms"
-                ,
-                "Halls,"
-                ,
-                "Master"
-                ,
-                "Bedroom"
-                ,
-                "Bedroom"
-                ,
-                "Bedroom"
-                ,
-                "Attic"
-                ,
-                "Basement"
-                ,
-                "Garage"};
-    }
-
-    @Override
     protected String getHint() {
         return "Inventory Name (Eg. House xxx)";
     }

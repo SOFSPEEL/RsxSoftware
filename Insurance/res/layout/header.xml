@@ -15,40 +15,46 @@
             android:layout_below="@+id/title"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_centerVertical="true"
             >
 
-        <com.rsxsoftware.insurance.view.InstantAutoComplete
-                android:layout_width="0dip"
-                android:layout_weight="60"
+        <AutoCompleteTextView
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/autoComplete"
                 />
 
-        <ImageButton
-                android:src="@android:drawable/ic_menu_add"
-                android:layout_width="0dip"
-                android:layout_weight="20"
+        <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/addButton"
-                />
+                android:orientation="horizontal">
 
-        <ImageButton
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="0dip"
-                android:layout_weight="20"
-                android:layout_height="wrap_content"
-                android:id="@+id/addPredefinedButton"
-                />
+            <ImageButton
+                    android:src="@android:drawable/ic_menu_add"
+                    android:layout_width="0dip"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addButton"
+                    />
 
-        <ImageButton
-                android:src="@drawable/ic_menu_refresh"
-                android:layout_width="0dip"
-                android:layout_weight="20"
-                android:layout_height="wrap_content"
-                android:id="@+id/refreshButton"
-                />
+            <ImageButton
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_width="0dip"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addPredefinedButton"
+                    />
+
+            <ImageButton
+                    android:src="@drawable/ic_menu_refresh"
+                    android:layout_width="0dip"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/refreshButton"
+                    />
+        </LinearLayout>
+
     </LinearLayout>
 
 

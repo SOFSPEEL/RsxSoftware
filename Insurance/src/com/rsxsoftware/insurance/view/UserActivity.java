@@ -25,22 +25,6 @@ public class UserActivity extends Activity {
         final LoginFragment loginFragment = new LoginFragment();
         getFragmentManager().beginTransaction().add(R.id.fragment_container, loginFragment).commit();
 
-//        new AsyncTask<Void, Void, Void>() {
-//            @Override
-//            protected Void doInBackground(Void... params) {
-//                final HashMap<String, String> map = new HashMap<String, String>();
-//                map.put("Junka", "junk1");
-//                map.put("Junkb", "junk2");
-//
-//                final UserActivity context = UserActivity.this;
-////                saveFilesToSaveEventually(context, map);
-//                final Set<String> strings = fetchArray(context);
-//
-//                return null;
-//            }
-//
-//
-//        }.execute();
     }
 
 

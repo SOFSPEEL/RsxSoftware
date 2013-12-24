@@ -21,11 +21,6 @@ public class RoomsFragment extends ListFragment<Room> {
     }
 
     @Override
-    protected String[] getSelections() {
-        return new String[0];
-    }
-
-    @Override
     protected String getHint() {
         return "Room Name (Eg. Master Bedroom)";
     }

@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Admin" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <module name="Admin" />
+    <option name="ACTIVITY_CLASS" value="" />
+    <option name="MODE" value="do_nothing" />
+    <option name="DEPLOY" value="true" />
+    <option name="ARTIFACT_NAME" value="" />
+    <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+    <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+    <option name="PREFERRED_AVD" value="" />
+    <option name="USE_COMMAND_LINE" value="true" />
+    <option name="COMMAND_LINE" value="" />
+    <option name="WIPE_USER_DATA" value="false" />
+    <option name="DISABLE_BOOT_ANIMATION" value="false" />
+    <option name="NETWORK_SPEED" value="full" />
+    <option name="NETWORK_LATENCY" value="none" />
+    <option name="CLEAR_LOGCAT" value="false" />
+    <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+    <RunnerSettings RunnerId="AndroidDebugRunner" />
+    <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+    <method>
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Admin" run_configuration_type="GradleRunConfiguration" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

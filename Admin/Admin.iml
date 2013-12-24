@@ -6,6 +6,9 @@
         <option name="GRADLE_PROJECT_PATH" value=":" />
       </configuration>
     </facet>
+    <facet type="android" name="Android">
+      <configuration />
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/debug" />
@@ -39,6 +42,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/instrumentTest/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/instrumentTest/assets" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/source/rs/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/apk" />
       <excludeFolder url="file://$MODULE_DIR$/build/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/bundles" />
