@@ -25,7 +25,7 @@ public class BinderDate extends BinderBase {
     @Override
     public void toObject(Bind bind, View view, ParseObject object) {
         DatePicker datePicker = (DatePicker) view;
-        final LocalDate dateTime = new LocalDate(DateTimeZone.UTC).withYear(datePicker.getYear()).withMonthOfYear(datePicker.getMonth()).withDayOfMonth(datePicker.getDayOfMonth());
+        final LocalDate dateTime = new LocalDate(DateTimeZone.UTC).withYear(datePicker.getYear()).withMonthOfYear(datePicker.getMonth()+1).withDayOfMonth(datePicker.getDayOfMonth());
         object.put(bind.key(), dateTime.toDate());
     }
 }

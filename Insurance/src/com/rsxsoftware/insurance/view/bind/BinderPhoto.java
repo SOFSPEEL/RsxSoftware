@@ -151,7 +151,7 @@ public class BinderPhoto extends BinderBase {
         final PhotoLayout layout = (PhotoLayout) view;
 
         final String filePath = layout.getFilePath();
-        if ((filePath != null) && layout.havePhoto()) {
+        if (filePath != null) {
 
             Prefs.updateFilesToSaveEventually(layout.getContext(), object, bind.key(), filePath);
 
