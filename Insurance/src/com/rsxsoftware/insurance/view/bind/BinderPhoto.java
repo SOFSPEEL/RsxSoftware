@@ -34,7 +34,6 @@ public class BinderPhoto extends BinderBase {
         layout.init(bind.text());
 
         final ImageButton del = layout.getDel();
-        final String key = bind.key();
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,9 +98,6 @@ public class BinderPhoto extends BinderBase {
 
     private void deletePhotoCancelDownload(ParseObject object, Bind bind, ParseFile photoFile) {
         object.remove(bind.key());
-        if (photoFile != null) {
-            photoFile.cancel();
-        }
     }
 
     private void selectFile(PhotoLayout photoLayout, Bind bind) {
@@ -122,7 +118,8 @@ public class BinderPhoto extends BinderBase {
     @Override
     public void toObject(Bind bind, View view, ParseObject object) {
         final PhotoLayout layout = (PhotoLayout) view;
-        if (layout.havePhoto()) {
+
+        if (layout.getModified() && layout.havePhoto()) {
 
             Bitmap bitmap = ((BitmapDrawable) layout.getPhoto().getDrawable()).getBitmap();
             if (bitmap != null) {
@@ -133,9 +130,10 @@ public class BinderPhoto extends BinderBase {
                     bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
                     byte[] byteArray = stream.toByteArray();
                     final String key = bind.key();
-                    final ParseFile parseFile = new ParseFile(key + ".jpg", byteArray);
-                    parseFile.save();
-                    object.put(key, parseFile);
+
+                    final ParseFileExtended parseFile = new ParseFileExtended(key + ".jpg", byteArray);
+                    parseFile.saveEventually(view.getContext(), bind, object);
+
                 } catch (Exception ex) {
                     ex.printStackTrace();
 

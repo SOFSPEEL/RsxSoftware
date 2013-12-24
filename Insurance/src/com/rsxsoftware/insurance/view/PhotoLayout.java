@@ -20,16 +20,19 @@ public class PhotoLayout extends RelativeLayout {
     PhotoState photoState = TAKE_PHOTO;
     private ImageView photo;
     private ImageButton del;
+    private boolean modified;
 
     public PhotoLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
+
     public void init(String text) {
         photo = (ImageView) findViewById(R.id.photo);
-        del = (ImageButton) getChildAt(1);
+        del = (ImageButton) findViewById(R.id.photoDelete);
         final TextView tv = (TextView) getChildAt(2);
         tv.setText(text);
     }
+
     public boolean havePhoto() {
         return photoState == PhotoLayout.PhotoState.HAVE_PHOTO;
     }
@@ -40,9 +43,14 @@ public class PhotoLayout extends RelativeLayout {
         photo.setImageBitmap(bitmap);
     }
 
-    public void setPhotoFile(String filePath) {
-        Bitmap bitmap = BitmapFactory.decodeFile(filePath);
+    public void setPhotoImage(Bitmap bitmap, boolean modified) {
+        this.modified = modified;
         setPhotoImage(bitmap);
+
+    }
+
+    public void setPhotoFile(String filePath, boolean modified) {
+        setPhotoImage(BitmapFactory.decodeFile(filePath), modified);
     }
 
     private void setState(PhotoState havePhoto) {
@@ -68,13 +76,14 @@ public class PhotoLayout extends RelativeLayout {
     }
 
 
-
-
     public ImageButton getDel() {
         return del;
     }
 
 
+    public boolean getModified() {
+        return modified;
+    }
 
 
     enum PhotoState {

@@ -1,16 +1,10 @@
 package com.rsxsoftware.insurance.view;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 import com.rsxsoftware.insurance.R;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Created by steve.fiedelberg on 12/14/13.
@@ -18,22 +12,6 @@ import java.util.Set;
 public class UserActivity extends Activity {
 
     public static final String TAG = "Inventory";
-
-    public static boolean saveArray(Context context, HashMap<String, String> map) {
-        SharedPreferences sp = context.getSharedPreferences("list", MODE_PRIVATE);
-        SharedPreferences.Editor edit = sp.edit();
-        edit.putStringSet("objectIds", map.keySet());
-        edit.putStringSet("path", new HashSet<String>(map.values()));
-        return edit.commit();
-    }
-
-    public static Set<String> fetchArray(Context context) {
-        SharedPreferences sp = context.getSharedPreferences("list", MODE_PRIVATE);
-        final Set<String> objectIds = sp.getStringSet("objectIds", new HashSet<String>());
-        return objectIds;
-    }
-
-
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -55,7 +33,7 @@ public class UserActivity extends Activity {
 //                map.put("Junkb", "junk2");
 //
 //                final UserActivity context = UserActivity.this;
-////                saveArray(context, map);
+////                saveFilesToSaveEventually(context, map);
 //                final Set<String> strings = fetchArray(context);
 //
 //                return null;
@@ -63,9 +41,6 @@ public class UserActivity extends Activity {
 //
 //
 //        }.execute();
-
-
-
     }
 
 

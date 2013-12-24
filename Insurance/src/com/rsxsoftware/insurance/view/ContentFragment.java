@@ -52,36 +52,34 @@ public class ContentFragment extends FragmentBase {
         if (resultCode == Activity.RESULT_OK) {
 
             if (requestCode > 100) {
-
-                saveFile(requestCode, data);
-
+                showPhotoFromFile(requestCode, data);
             } else {
-                savePhoto(requestCode, data);
+                showPhotoFromCamera(requestCode, data);
             }
         }
     }
 
-    private void saveFile(int requestCode, Intent data) {
+    private void showPhotoFromFile(int requestCode, Intent data) {
         Uri uri = data.getData();
         String scheme = uri.getScheme();
         if ("file".equals(scheme)) {
             final String path = uri.getPath();
             if (requestCode == 101) {
-                photoLayout.setPhotoFile(path);
+                photoLayout.setPhotoFile(path, true);
             } else if (requestCode == 102) {
-                receiptLayout.setPhotoFile(path);
+                receiptLayout.setPhotoFile(path, true);
             }
         } else if ("content".equals(scheme)) {
             // process as a uri that points to a content item
         }
     }
 
-    private void savePhoto(int requestCode, Intent data) {
+    private void showPhotoFromCamera(int requestCode, Intent data) {
         Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-        if (requestCode == 1) {
-            photoLayout.setPhotoImage(bitmap);
+        if (requestCode == 1 ) {
+            photoLayout.setPhotoImage(bitmap, true);
         } else if (requestCode == 2) {
-            receiptLayout.setPhotoImage(bitmap);
+            receiptLayout.setPhotoImage(bitmap, true);
         }
     }
 

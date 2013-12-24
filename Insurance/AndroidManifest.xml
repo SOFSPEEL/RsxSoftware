@@ -28,5 +28,6 @@
         </activity>
 
 
+        <service android:name=".ParseFileSaveEventuallyService"/>
     </application>
 </manifest>

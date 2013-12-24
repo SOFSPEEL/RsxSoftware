@@ -82,7 +82,6 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
 
     protected abstract ListAdapter createAdapter();
 
-
     protected abstract String[] getSelections();
 
     protected abstract String getHint();
