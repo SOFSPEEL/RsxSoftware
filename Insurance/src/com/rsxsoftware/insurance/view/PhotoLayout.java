@@ -20,7 +20,8 @@ public class PhotoLayout extends RelativeLayout {
     PhotoState photoState = TAKE_PHOTO;
     private ImageView photo;
     private ImageButton del;
-    private boolean modified;
+    private String filePath;
+
 
     public PhotoLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -43,14 +44,40 @@ public class PhotoLayout extends RelativeLayout {
         photo.setImageBitmap(bitmap);
     }
 
-    public void setPhotoImage(Bitmap bitmap, boolean modified) {
-        this.modified = modified;
-        setPhotoImage(bitmap);
 
+    public void setPhotoImage() {
+        if (filePath != null){
+            setPhotoFile(filePath);
+        }
     }
 
-    public void setPhotoFile(String filePath, boolean modified) {
-        setPhotoImage(BitmapFactory.decodeFile(filePath), modified);
+    public void setPhotoFile(String filePath) {
+        this.filePath = filePath;
+        setPic();
+    }
+
+
+    private void setPic() {
+        // Get the dimensions of the View
+        int targetW = photo.getWidth();
+        int targetH = photo.getHeight();
+
+        // Get the dimensions of the bitmap
+        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+        bmOptions.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(filePath, bmOptions);
+        int photoW = bmOptions.outWidth;
+        int photoH = bmOptions.outHeight;
+
+        // Determine how much to scale down the image
+        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
+
+        // Decode the image file into a Bitmap sized to fill the View
+        bmOptions.inJustDecodeBounds = false;
+        bmOptions.inSampleSize = scaleFactor;
+        bmOptions.inPurgeable = true;
+
+        photo.setImageBitmap(BitmapFactory.decodeFile(filePath, bmOptions));
     }
 
     private void setState(PhotoState havePhoto) {
@@ -81,9 +108,15 @@ public class PhotoLayout extends RelativeLayout {
     }
 
 
-    public boolean getModified() {
-        return modified;
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
 
 
     enum PhotoState {

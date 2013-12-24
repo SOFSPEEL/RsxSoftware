@@ -2,6 +2,7 @@ package com.rsxsoftware.insurance.prefs;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import com.parse.ParseObject;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -22,4 +23,14 @@ public class Prefs {
         edit.putStringSet("objectIds", set);
         return edit.commit();
     }
+
+    public static void updateFilesToSaveEventually(Context context, ParseObject object, String key, String filePath) {
+        final String valueToStore = new PhotoSave(object.getObjectId(), key, filePath).createStorageValue();
+        final Set<String> files = fetchFilesToSaveEventually(context);
+        if (!files.contains(valueToStore)){
+            files.add(valueToStore);
+            saveFilesToSaveEventually(context, files);
+        }
+    }
+
 }

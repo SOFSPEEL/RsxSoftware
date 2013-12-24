@@ -5,7 +5,8 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,10 +18,13 @@ import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.rsxsoftware.insurance.R;
+import com.rsxsoftware.insurance.prefs.Prefs;
 import com.rsxsoftware.insurance.view.PhotoLayout;
-import org.apache.commons.io.IOUtils;
 
-import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created by steve.fiedelberg on 12/16/13.
@@ -107,7 +111,17 @@ public class BinderPhoto extends BinderBase {
     }
 
     private void takePhoto(PhotoLayout layout, Bind bind) {
-        startActivityForResult(layout, new Intent(MediaStore.ACTION_IMAGE_CAPTURE), bind.requestCode());
+
+        final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        try {
+            final File imageFile = createImageFile();
+            layout.setFilePath(imageFile.getAbsolutePath());
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(imageFile));
+            startActivityForResult(layout, intent, bind.requestCode());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void startActivityForResult(PhotoLayout layout, Intent intent, int requestCode) {
@@ -115,32 +129,32 @@ public class BinderPhoto extends BinderBase {
         fragment.startActivityForResult(intent, requestCode);
     }
 
+
+    private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_PICTURES);
+        File image = File.createTempFile(
+                imageFileName,  /* prefix */
+                ".jpg",         /* suffix */
+                storageDir      /* directory */
+        );
+
+        // Save a file: path for use with ACTION_VIEW intents
+        return image;
+    }
+
     @Override
     public void toObject(Bind bind, View view, ParseObject object) {
         final PhotoLayout layout = (PhotoLayout) view;
 
-        if (layout.getModified() && layout.havePhoto()) {
+        final String filePath = layout.getFilePath();
+        if ((filePath != null) && layout.havePhoto()) {
 
-            Bitmap bitmap = ((BitmapDrawable) layout.getPhoto().getDrawable()).getBitmap();
-            if (bitmap != null) {
+            Prefs.updateFilesToSaveEventually(layout.getContext(), object, bind.key(), filePath);
 
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                try {
-
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                    byte[] byteArray = stream.toByteArray();
-                    final String key = bind.key();
-
-                    final ParseFileExtended parseFile = new ParseFileExtended(key + ".jpg", byteArray);
-                    parseFile.saveEventually(view.getContext(), bind, object);
-
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-
-                } finally {
-                    IOUtils.closeQuietly(stream);
-                }
-            }
         }
     }
 }
