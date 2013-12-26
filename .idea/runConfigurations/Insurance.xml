@@ -18,6 +18,9 @@
     <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
     <RunnerSettings RunnerId="AndroidDebugRunner" />
     <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-    <method />
+    <method>
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Insurance Gradle" run_configuration_type="GradleRunConfiguration" />
+      <option name="Make" enabled="true" />
+    </method>
   </configuration>
 </component>

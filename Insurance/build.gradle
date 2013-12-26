@@ -13,7 +13,7 @@ apply plugin: 'android'
 android {
 //    Have this building against gradle version: gradle-1.8/bin/gradle build
     compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+    buildToolsVersion "18.1.1"
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'

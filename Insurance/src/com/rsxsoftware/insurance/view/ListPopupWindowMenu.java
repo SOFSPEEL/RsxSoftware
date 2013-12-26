@@ -27,7 +27,7 @@ public class ListPopupWindowMenu extends ListPopupWindow {
     @Override
     public void postShow() {
         super.postShow();
-        getAnchorView().requestFocus();
+        getAnchorView().setSelected(true);
     }
 
     private void setAdapter(final Activity activity, final PopupView[] popupViews) {

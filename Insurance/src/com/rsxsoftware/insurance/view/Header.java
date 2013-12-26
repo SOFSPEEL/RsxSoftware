@@ -1,19 +1,19 @@
 package com.rsxsoftware.insurance.view;
 
 import android.app.FragmentManager;
-import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.TextView;
+import android.widget.Filter;
+import android.widget.Filterable;
 import com.parse.*;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.Inventory;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,6 +23,7 @@ public class Header<TList extends ParseObjectBase> {
 
     private final UserActivity userActivity;
     private final ListFragment<TList> listFragment;
+    private View header;
 
     public Header(UserActivity userActivity, ListFragment<TList> listFragment) {
 
@@ -31,46 +32,47 @@ public class Header<TList extends ParseObjectBase> {
     }
 
 
-    public void setup(final View header) {
+    public void setup() {
+        header = userActivity.getLayoutInflater().inflate(R.layout.header, null);
+        final AutoCompleteTextView autoComplete = (AutoCompleteTextView) header.findViewById(R.id.autoComplete);
+
+        autoComplete.setHint(listFragment.getHint());
+        autoComplete.setThreshold(1);
+
+
+        autoComplete.setAdapter(new AutoCompleteAdapter());
 
         listFragment.fetchSelections(new FindCallback<ParseObject>() {
             @Override
-            public void done(List<ParseObject> list, ParseException e) {
+            public void done(List<ParseObject> selections, ParseException e) {
 
-                final AutoCompleteTextView autoComplete = setupAutoComplete(header, list);
-                handleAddButton(header, autoComplete);
+                if (e == null) {
+
+                    setupAutoComplete(header, selections, autoComplete);
+
+                }
             }
         });
 
-
+        handleAddButton(header, autoComplete);
         handleRefreshButton(header);
         handleAddPredefined(header);
 
     }
 
-    private AutoCompleteTextView setupAutoComplete(View header, final List<ParseObject> selections) {
-        final AutoCompleteTextView autoComplete = (AutoCompleteTextView) header.findViewById(R.id.autoComplete);
+    private AutoCompleteTextView setupAutoComplete(View header, final List<ParseObject> selections, AutoCompleteTextView autoComplete) {
 
-        final ArrayAdapter<ParseObject> adapter = new ArrayAdapter<ParseObject>(header.getContext(),
-                android.R.layout.simple_dropdown_item_1line, selections){
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                final TextView tv = (TextView) super.getView(position, convertView, parent);
-                                 tv.setText(selections.get(position).getString("desc"));
-                return tv;
-            }
-        };
-        autoComplete.setAdapter(adapter);
-        autoComplete.setHint(listFragment.getHint());
-//        autoComplete.setText("");
-        autoComplete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CharSequence constraint = autoComplete.getText();
-                adapter.getFilter().filter(constraint);
-                autoComplete.showDropDown();
-            }
-        });
+
+        final ArrayList<String> strings = new ArrayList<String>();
+        for (ParseObject obj : selections) {
+
+            strings.add(obj.getString("desc"));
+        }
+
+
+        autoComplete.setAdapter(new ArrayAdapter<String>(header.getContext(),
+                android.R.layout.simple_dropdown_item_1line, strings));
+
         return autoComplete;
     }
 
@@ -80,12 +82,9 @@ public class Header<TList extends ParseObjectBase> {
             @Override
             public void onClick(View v) {
 
-                final ProgressFragment progressFragment = new ProgressFragment();
-                final Bundle args = new Bundle();
-                args.putString("title", "Fetching");
-                progressFragment.setArguments(args);
                 final FragmentManager fragmentManager = userActivity.getFragmentManager();
-                progressFragment.show(fragmentManager.beginTransaction(), "dialog");
+                final ProgressFragment progressFragment = new ProgressFragment(fragmentManager, "Fetching");
+
 
                 new ParseQuery<Inventory>("Inventory").whereEqualTo("master", true).findInBackground(new FindCallback<Inventory>() {
                     @Override
@@ -93,6 +92,7 @@ public class Header<TList extends ParseObjectBase> {
                         progressFragment.dismiss();
 
                         final PredefinedListFragmentDialog predefinedListFragmentDialog = new PredefinedListFragmentDialog(inventories);
+
                         predefinedListFragmentDialog.show(fragmentManager.beginTransaction(), "dialog");
 
                     }
@@ -122,7 +122,6 @@ public class Header<TList extends ParseObjectBase> {
                 final String value = text.toString();
 
                 if (!TextUtils.isEmpty(value)) {
-                    autoComplete.setText("");
                     final TList newObject = listFragment.newObjectInstance();
                     newObject.put("desc", value);
                     final ParseRelation<ParseObject> relation = newObject.getRelation(newObject.getRelationName());
@@ -135,4 +134,24 @@ public class Header<TList extends ParseObjectBase> {
         });
     }
 
+    public View getView() {
+        return header;
+    }
+
+    private class AutoCompleteAdapter extends ParseQueryAdapter implements Filterable {
+        public AutoCompleteAdapter() {
+            super(userActivity, new ParseQueryAdapter.QueryFactory<TList>() {
+                @Override
+                public ParseQuery<TList> create() {
+                    return new ParseQuery(listFragment.getSelected().createChildObject().getTableName()).orderByAscending("desc");
+                }
+            }, android.R.layout.simple_dropdown_item_1line);
+            setTextKey("desc");
+        }
+
+        @Override
+        public Filter getFilter() {
+            return null;
+        }
+    }
 }

@@ -8,10 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import com.parse.FindCallback;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
+import com.parse.*;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 import com.rsxsoftware.insurance.business.ParseObjectInterface;
@@ -39,27 +36,21 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         final View view = inflater.inflate(getLayout(), container, false);
 
         lv = (ListView) view.findViewById(R.id.lv);
-        final View header = inflater.inflate(R.layout.header, null);
-        new Header(userActivity, this).setup(header);
 
-        lv.addHeaderView(header);
+        final Header header = new Header(userActivity, this);
+        header.setup();
+
+        lv.addHeaderView(header.getView());
         adapter = createAdapter();
         lv.setAdapter(adapter);
         return view;
     }
 
-
-    public List<ParseObjectBase> getParseObjects() {
-        return parseObjects;
-    }
-
     public void switchTo(UserActivity userActivity, FragmentBase fragmentTo, ParseObjectInterface selected) {
 
         if (fragmentTo != null) {
-
-            replaceFragment(userActivity, fragmentTo);
-
             fragmentTo.setSelected(selected);
+            replaceFragment(userActivity, fragmentTo);
             if (fragmentTo instanceof ListFragment) {
                 ListFragment fragmentListTo = (ListFragment) fragmentTo;
                 selected.fetchList(fragmentListTo.createUpdateListCallback());
@@ -81,22 +72,32 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         lv.smoothScrollToPosition(parseObjects.size());
     }
 
-    protected abstract ListAdapter createAdapter();
+    private ListAdapter createAdapter() {
+
+        ParseQueryAdapter.QueryFactory<ParseObject> factory =
+                new ParseQueryAdapter.QueryFactory<ParseObject>() {
+                    public ParseQuery create() {
+                        return new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc");
+                    }
+                };
+
+        return new ListAdapter(userActivity, this, factory) {
+            @Override
+            protected FragmentBase newChildFragment() {
+                return getNextFragment();
+            }
+        };
+    }
+
+    protected abstract FragmentBase getNextFragment();
 
     protected void fetchSelections(FindCallback callback) {
 
         new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc").findInBackground(callback);
 
     }
+
     protected abstract String getHint();
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        Log.d(TAG, "onResume");
-    }
-
 
     protected abstract TList newObjectInstance();
 
@@ -115,7 +116,7 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
                 if (e == null) {
 
                     parseObjects = list;
-                    adapter.setParseObjects(parseObjects);
+//                    adapter.setParseObjects(parseObjects);   //TODO:
 
 
                 } else {

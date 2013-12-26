@@ -3,6 +3,7 @@ package com.rsxsoftware.insurance;
 import android.app.Application;
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.parse.ParseUser;
 import com.rsxsoftware.insurance.business.Content;
 import com.rsxsoftware.insurance.business.Inventory;
 import com.rsxsoftware.insurance.business.Room;
@@ -19,6 +20,9 @@ public class InsuranceApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        ParseUser.enableAutomaticUser();
+
         ParseObject.registerSubclass(UserFacade.class);
         ParseObject.registerSubclass(Inventory.class);
         ParseObject.registerSubclass(Room.class);

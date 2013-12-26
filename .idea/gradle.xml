@@ -3,12 +3,12 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Admin" />
         <option name="gradleHome" value="$USER_HOME$/Downloads/gradle-1.8" />
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Insurance" />
         <option name="gradleHome" value="$USER_HOME$/Downloads/gradle-1.8" />
         <option name="useAutoImport" value="true" />

@@ -27,8 +27,7 @@ public abstract class ParseObjectBase extends ParseObjectFetch {
     }
 
     public String initTextForDetailsButton() {
-        final ParseObjectInterface childObject = createChildObject();
-        return childObject.getTableName();
+        return createChildObject().getTableName();
     }
 
     public void fetchTextForDetailsButton(CountCallback callback) {

@@ -12,15 +12,9 @@ import com.rsxsoftware.insurance.business.ParseObjectInterface;
  */
 @ParseClassName("UserFacade")
 public class UserFacade extends ParseObjectFetch {
-    private ParseUser currentUser;
 
     public UserFacade() {
         super("UserFacade");
-    }
-
-    public UserFacade(ParseUser currentUser) {
-        super("UserFacade");
-        this.currentUser = currentUser;
     }
 
     @Override
@@ -53,6 +47,6 @@ public class UserFacade extends ParseObjectFetch {
 
     @Override
     public ParseObject getRealObject() {
-        return currentUser;
+        return ParseUser.getCurrentUser();
     }
 }

@@ -2,9 +2,6 @@ package com.rsxsoftware.insurance.view;
 
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.Inventory;
-import com.rsxsoftware.insurance.business.ParseObjectBase;
-
-import java.util.List;
 
 public class InventoriesFragment extends ListFragment<Inventory> {
 
@@ -16,8 +13,8 @@ public class InventoriesFragment extends ListFragment<Inventory> {
 
 
     @Override
-    protected ListAdapter createAdapter() {
-        return new InventoryAdapter(getParseObjects());
+    protected FragmentBase getNextFragment() {
+        return new RoomsFragment();
     }
 
     @Override
@@ -38,18 +35,4 @@ public class InventoriesFragment extends ListFragment<Inventory> {
     }
 
 
-    private class InventoryAdapter extends ListAdapter {
-
-        public InventoryAdapter(List<ParseObjectBase> parseObjects) {
-
-            super(userActivity, InventoriesFragment.this, parseObjects);
-        }
-
-
-
-        @Override
-        protected FragmentBase newChildFragment() {
-            return new RoomsFragment();
-        }
-    }
 }

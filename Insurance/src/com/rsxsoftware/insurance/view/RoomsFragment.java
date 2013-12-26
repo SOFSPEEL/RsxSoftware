@@ -1,10 +1,7 @@
 package com.rsxsoftware.insurance.view;
 
 import com.rsxsoftware.insurance.R;
-import com.rsxsoftware.insurance.business.ParseObjectBase;
 import com.rsxsoftware.insurance.business.Room;
-
-import java.util.List;
 
 /**
  * Created by steve.fiedelberg on 12/14/13.
@@ -14,10 +11,9 @@ public class RoomsFragment extends ListFragment<Room> {
     public RoomsFragment() {
     }
 
-
     @Override
-    protected ListAdapter createAdapter() {
-        return new RoomAdapter(getParseObjects());
+    protected FragmentBase getNextFragment() {
+        return new ContentsFragment();
     }
 
     @Override
@@ -36,18 +32,5 @@ public class RoomsFragment extends ListFragment<Room> {
         return R.layout.list;
     }
 
-    private class RoomAdapter extends ListAdapter {
-
-        public RoomAdapter(List<ParseObjectBase> parseObjects) {
-
-            super(userActivity, RoomsFragment.this, parseObjects);
-        }
-
-
-        @Override
-        protected FragmentBase newChildFragment() {
-            return new ContentsFragment();
-        }
-    }
 
 }

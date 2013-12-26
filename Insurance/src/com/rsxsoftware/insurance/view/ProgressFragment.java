@@ -2,6 +2,7 @@ package com.rsxsoftware.insurance.view;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 
@@ -10,6 +11,12 @@ import android.os.Bundle;
 */
 class ProgressFragment extends DialogFragment {
 
+    public ProgressFragment(FragmentManager fragmentManager, String title) {
+        final Bundle args = new Bundle();
+        args.putString("title", title);
+        setArguments(args);
+        show(fragmentManager.beginTransaction(), "dialog");
+    }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {

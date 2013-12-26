@@ -1,6 +1,7 @@
 package com.rsxsoftware.insurance.view;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
@@ -20,13 +21,21 @@ public class UserActivity extends Activity {
 
         ParseAnalytics.trackAppOpened(getIntent());
 
-        ParseUser.enableAutomaticUser();
+//        final ProgressFragment progressFragment = new ProgressFragment(getFragmentManager(), "Attempting to automatically login");
 
-        final LoginFragment loginFragment = new LoginFragment();
-        getFragmentManager().beginTransaction().add(R.id.fragment_container, loginFragment).commit();
-
+        final boolean haveUser = ParseUser.getCurrentUser() != null;
+//        progressFragment.dismiss();
+        if (haveUser) {
+            new InventoriesFragment().switchTo(this, new InventoriesFragment(), new UserFacade());
+        }
+        else {
+            addFrag(new LoginFragment());
+        }
     }
 
+    private int addFrag(Fragment fragment) {
+        return getFragmentManager().beginTransaction().add(R.id.fragment_container, fragment).commit();
+    }
 
 
 //    private void loginUser() {

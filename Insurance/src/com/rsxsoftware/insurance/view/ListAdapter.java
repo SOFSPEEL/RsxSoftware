@@ -7,58 +7,43 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import com.parse.CountCallback;
 import com.parse.ParseException;
+import com.parse.ParseQueryAdapter;
 import com.parse.ParseUser;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by steve.fiedelberg on 12/15/13.
  */
-public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter {
+public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryAdapter<T> {
 
     private final UserActivity userActivity;
     private final ListFragment fragment;
-    private List<ParseObjectBase> parseObjects;
 
-    public ListAdapter(UserActivity userActivity, ListFragment fragment, List<ParseObjectBase> parseObjects) {
+    public ListAdapter(UserActivity userActivity, ListFragment fragment, QueryFactory<T> queryFactory) {
+        super(userActivity, queryFactory);
+        setTextKey("desc");
+        setPaginationEnabled(true);
         this.userActivity = userActivity;
         this.fragment = fragment;
-        this.parseObjects = parseObjects;
+        setPlaceholder(userActivity.getResources().getDrawable(android.R.drawable.progress_horizontal));
     }
 
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getItemView(T object, View v, ViewGroup parent) {
         final View row = userActivity.getLayoutInflater().inflate(R.layout.list_row, null);
         final TextView tv = (TextView) row.findViewById(R.id.desc);
-        final List<ParseObjectBase> parseObjects = fragment.getParseObjects();
-        final ParseObjectBase object = parseObjects.get(position);
         tv.setText(object.getString("desc"));
         handleButtons(row, object);
         return row;
 
-    }
-
-    @Override
-    public int getCount() {
-        return parseObjects.size();
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return parseObjects.get(position);
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
     }
 
     protected void handleButtons(final View row, final ParseObjectBase object) {
@@ -70,7 +55,9 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
         object.fetchTextForDetailsButton(new CountCallback() {
             @Override
             public void done(int i, ParseException e) {
-                buttonChildren.setText(text + "(" + i + ")");
+                if (e == null) {
+                    buttonChildren.setText(text + "(" + i + ")");
+                }
             }
         });
 
@@ -149,10 +136,6 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
 
     protected abstract FragmentBase newChildFragment();
 
-    public void setParseObjects(List<ParseObjectBase> parseObjects) {
-        this.parseObjects = parseObjects;
-        notifyDataSetChanged();
-    }
 
     private class DeleteItemDialog extends DialogFragment {
         private final ParseObjectBase object;
@@ -171,8 +154,8 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends BaseAdapter
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     object.deleteEventually();
-                    parseObjects.remove(object);
-                    ListAdapter.this.notifyDataSetChanged();
+                    //TODO: delete item in adapter
+                    notifyDataSetChanged();
                 }
             }).setNegativeButton(R.string.no, null).create();
             return alertDialog;

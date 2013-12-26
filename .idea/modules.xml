@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Admin/Admin.iml" filepath="$PROJECT_DIR$/Admin/Admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/Insurance/Insurance.iml" filepath="$PROJECT_DIR$/Insurance/Insurance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RsxSoftware.iml" filepath="$PROJECT_DIR$/RsxSoftware.iml" />
     </modules>
   </component>
 </project>

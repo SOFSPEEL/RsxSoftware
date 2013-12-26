@@ -52,11 +52,7 @@ public class LoginFragment extends Fragment {
 
     private void retryLogin() {
 
-        final ProgressFragment progressFragment = new ProgressFragment();
-        final Bundle args = new Bundle();
-        args.putString("title", "Logging in");
-        progressFragment.setArguments(args);
-        progressFragment.show(getFragmentManager().beginTransaction(), "dialog");
+        final ProgressFragment progressFragment = new ProgressFragment(getFragmentManager(), "Logging in");
 
         ParseUser.logInInBackground(user.getText().toString(), password.getText().toString(), new LogInCallback() {
             @Override
@@ -66,7 +62,7 @@ public class LoginFragment extends Fragment {
                 if (e != null) {
                     Toast.makeText(getActivity(), "Failed to login: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 } else {
-                    new InventoriesFragment().switchTo(activity, new InventoriesFragment(), new UserFacade(currentUser));
+                    new InventoriesFragment().switchTo(activity, new InventoriesFragment(), new UserFacade());
                 }
             }
         });
