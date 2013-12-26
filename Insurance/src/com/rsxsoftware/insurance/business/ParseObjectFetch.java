@@ -24,7 +24,7 @@ public abstract class ParseObjectFetch extends ParseObject implements ParseObjec
     protected ParseQuery<ParseObjectBase> fetchList(ParseObject object) {
         final ParseObjectInterface childObject = createChildObject();
         ParseQuery<ParseObjectBase> query = new ParseQuery(childObject.getTableName());
-        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
+        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
         query = query.whereEqualTo(childObject.getRelationName(), object);
         return query;
     }

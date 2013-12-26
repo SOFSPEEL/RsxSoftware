@@ -38,21 +38,7 @@ public class Header<TList extends ParseObjectBase> {
 
         autoComplete.setHint(listFragment.getHint());
         autoComplete.setThreshold(1);
-
-
         autoComplete.setAdapter(new AutoCompleteAdapter());
-
-        listFragment.fetchSelections(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> selections, ParseException e) {
-
-                if (e == null) {
-
-                    setupAutoComplete(header, selections, autoComplete);
-
-                }
-            }
-        });
 
         handleAddButton(header, autoComplete);
         handleRefreshButton(header);
@@ -85,8 +71,9 @@ public class Header<TList extends ParseObjectBase> {
                 final FragmentManager fragmentManager = userActivity.getFragmentManager();
                 final ProgressFragment progressFragment = new ProgressFragment(fragmentManager, "Fetching");
 
-
-                new ParseQuery<Inventory>("Inventory").whereEqualTo("master", true).findInBackground(new FindCallback<Inventory>() {
+                final ParseQuery<Inventory> inventory = new ParseQuery<Inventory>("Inventory");
+                inventory.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
+                inventory.whereEqualTo("master", true).findInBackground(new FindCallback<Inventory>() {
                     @Override
                     public void done(List<Inventory> inventories, ParseException e) {
                         progressFragment.dismiss();
@@ -108,7 +95,7 @@ public class Header<TList extends ParseObjectBase> {
 
             @Override
             public void onClick(View v) {
-                listFragment.getSelected().fetchList(listFragment.createUpdateListCallback());
+                listFragment.refresh();
             }
         });
     }
@@ -143,7 +130,9 @@ public class Header<TList extends ParseObjectBase> {
             super(userActivity, new ParseQueryAdapter.QueryFactory<TList>() {
                 @Override
                 public ParseQuery<TList> create() {
-                    return new ParseQuery(listFragment.getSelected().createChildObject().getTableName()).orderByAscending("desc");
+                    final ParseQuery parseQuery = new ParseQuery(listFragment.getSelected().createChildObject().getTableName());
+                    parseQuery.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
+                    return parseQuery.orderByAscending("desc");
                 }
             }, android.R.layout.simple_dropdown_item_1line);
             setTextKey("desc");

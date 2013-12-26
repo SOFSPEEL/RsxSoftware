@@ -40,7 +40,7 @@ public class UserFacade extends ParseObjectFetch {
             final ParseObjectInterface childObject = createChildObject();
 
             final ParseQuery<ParseObjectBase> query = new ParseQuery(childObject.getTableName());
-            query.setCachePolicy(ParseQuery.CachePolicy.CACHE_THEN_NETWORK);
+            query.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
             query.whereEqualTo("user", object).findInBackground(updateListCallback);
         }
     }

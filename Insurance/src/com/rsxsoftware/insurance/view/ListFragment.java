@@ -3,12 +3,13 @@ package com.rsxsoftware.insurance.view;
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import com.parse.*;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseQueryAdapter;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 import com.rsxsoftware.insurance.business.ParseObjectInterface;
@@ -51,10 +52,6 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         if (fragmentTo != null) {
             fragmentTo.setSelected(selected);
             replaceFragment(userActivity, fragmentTo);
-            if (fragmentTo instanceof ListFragment) {
-                ListFragment fragmentListTo = (ListFragment) fragmentTo;
-                selected.fetchList(fragmentListTo.createUpdateListCallback());
-            }
         }
     }
 
@@ -77,7 +74,9 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         ParseQueryAdapter.QueryFactory<ParseObject> factory =
                 new ParseQueryAdapter.QueryFactory<ParseObject>() {
                     public ParseQuery create() {
-                        return new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc");
+                        final ParseQuery query = new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc");
+                        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
+                        return query;
                     }
                 };
 
@@ -91,12 +90,6 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
 
     protected abstract FragmentBase getNextFragment();
 
-    protected void fetchSelections(FindCallback callback) {
-
-        new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc").findInBackground(callback);
-
-    }
-
     protected abstract String getHint();
 
     protected abstract TList newObjectInstance();
@@ -109,20 +102,7 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         super.onAttach(activity);
     }
 
-    protected FindCallback<ParseObjectBase> createUpdateListCallback() {
-        return new FindCallback<ParseObjectBase>() {
-            @Override
-            public void done(List<ParseObjectBase> list, ParseException e) {
-                if (e == null) {
-
-                    parseObjects = list;
-//                    adapter.setParseObjects(parseObjects);   //TODO:
-
-
-                } else {
-                    Log.e(TAG, "Fetch failed", e);
-                }
-            }
-        };
+    public void refresh() {
+        lv.setAdapter(createAdapter());
     }
 }

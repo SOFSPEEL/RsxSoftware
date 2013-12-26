@@ -24,34 +24,12 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="WARN" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9d2bbdb-a079-4d0c-8c3a-3735da453053" name="Default" comment="&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RsxSoftware.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Insurance/insurance.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Insurance/res/values/style.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Admin.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Admin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Insurance/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ContentsFragment.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ContentsFragment.java" />
+    <list default="true" id="a9d2bbdb-a079-4d0c-8c3a-3735da453053" name="Default" comment="Autocomplete adapter now uses parseadatper&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/Header.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/Header.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Insurance.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Insurance.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/InsuranceApplication.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/InsuranceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/InventoriesFragment.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/InventoriesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListPopupWindowMenu.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListPopupWindowMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/LoginFragment.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/LoginFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectBase.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ProgressFragment.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ProgressFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/RoomsFragment.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/RoomsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserActivity.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Admin/build.gradle" afterPath="$PROJECT_DIR$/Admin/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/build.gradle" afterPath="$PROJECT_DIR$/Insurance/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/res/layout/header.xml" afterPath="$PROJECT_DIR$/Insurance/res/layout/header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/res/layout/popup_row.xml" afterPath="$PROJECT_DIR$/Insurance/res/layout/popup_row.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RsxSoftware.iws" />
@@ -258,22 +236,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" line="95" class="com.rsxsoftware.insurance.view.ListFragment" package="com.rsxsoftware.insurance.view">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" line="51" class="com.rsxsoftware.insurance.view.ListFragment" package="com.rsxsoftware.insurance.view">
+      <breakpoint url="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" line="52" class="com.rsxsoftware.insurance.view.ListFragment" package="com.rsxsoftware.insurance.view">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -298,45 +261,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Header.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Header.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="71" selection-start="5019" selection-end="5019" vertical-scroll-proportion="0.48129675" vertical-offset="1592" max-vertical-offset="2040">
+            <state line="133" column="87" selection-start="4855" selection-end="4855" vertical-scroll-proportion="0.0" vertical-offset="1595" max-vertical-offset="1995">
               <folding>
-                <element signature="e#1346#1631#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-                <element signature="e#2786#3271#0" expanded="true" />
-                <element signature="e#3251#3252#0" expanded="true" />
-                <element signature="e#4747#5033#0" expanded="true" />
+                <element signature="e#2061#3121#0" expanded="true" />
+                <element signature="e#2426#2437#0" expanded="true" />
+                <element signature="e#2609#3094#0" expanded="true" />
+                <element signature="e#3074#3075#0" expanded="true" />
+                <element signature="e#3109#3110#0" expanded="true" />
+                <element signature="e#3250#3407#0" expanded="true" />
+                <element signature="e#3396#3397#0" expanded="true" />
+                <element signature="e#4515#4953#0" expanded="true" />
+                <element signature="e#4938#4939#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$ANDROID_HOME$/sources/android-19/android/widget/BaseAdapter.java">
+      <file leaf-file-name="ParseObjectInterface.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="58" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="1110">
+            <state line="15" column="9" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Admin/src/com/rsxsoftware/Admin/AdminActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="24" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2025">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListAdapter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PredefinedListFragmentDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/PredefinedListFragmentDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="6" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="690">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParseObjectFetch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="70" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="74" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2145">
+            <state line="156" column="66" selection-start="5327" selection-end="5327" vertical-scroll-proportion="0.44987774" vertical-offset="1736" max-vertical-offset="2145">
               <folding>
-                <element signature="e#3073#3088#0" expanded="true" />
-                <element signature="e#3112#3358#0" expanded="true" />
-                <element signature="e#3339#3340#0" expanded="true" />
-                <element signature="e#3455#3468#0" expanded="true" />
-                <element signature="e#4061#4084#0" expanded="true" />
-                <element signature="e#4903#4978#0" expanded="true" />
-                <element signature="e#5099#5111#0" expanded="true" />
-                <element signature="e#5113#5425#0" expanded="true" />
-                <element signature="e#5410#5411#0" expanded="true" />
-                <element signature="e#5445#5456#0" expanded="true" />
+                <element signature="e#3102#3117#0" expanded="true" />
+                <element signature="e#3141#3387#0" expanded="true" />
+                <element signature="e#3368#3369#0" expanded="true" />
+                <element signature="e#3484#3497#0" expanded="true" />
+                <element signature="e#4090#4113#0" expanded="true" />
+                <element signature="e#4932#5007#0" expanded="true" />
+                <element signature="e#5128#5140#0" expanded="true" />
+                <element signature="e#5142#5399#0" expanded="true" />
+                <element signature="e#5384#5385#0" expanded="true" />
+                <element signature="e#5419#5430#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -346,33 +342,6 @@
         <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable/progress_horizontal.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListPopupWindowMenu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListPopupWindowMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="795">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/LoginFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="63" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProgressFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ProgressFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -390,11 +359,20 @@
       <file leaf-file-name="ListFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="19" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="1755">
+            <state line="77" column="86" selection-start="2773" selection-end="2773" vertical-scroll-proportion="0.0" vertical-offset="815" max-vertical-offset="1485">
               <folding>
-                <element signature="e#2616#2878#0" expanded="true" />
-                <element signature="e#2859#2860#0" expanded="true" />
+                <element signature="e#2446#2853#0" expanded="true" />
+                <element signature="e#2834#2835#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFacade.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="74" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="810">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1115,7 +1093,6 @@
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/Room.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/Inventory.java" />
         <option value="$PROJECT_DIR$/Insurance/res/layout/list_row.xml" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectInterface.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/Content.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/ParseFileJunk.java" />
@@ -1139,9 +1116,7 @@
         <option value="$PROJECT_DIR$/Insurance/insurance.sh" />
         <option value="$PROJECT_DIR$/Insurance/res/layout/header.xml" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/InsuranceApplication.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectBase.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/RoomsFragment.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/InventoriesFragment.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ContentsFragment.java" />
@@ -1150,9 +1125,12 @@
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListPopupWindowMenu.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ProgressFragment.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/LoginFragment.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserActivity.java" />
+        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java" />
         <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/Header.java" />
+        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" />
+        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java" />
+        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java" />
       </list>
     </option>
   </component>
@@ -1607,7 +1585,11 @@
       <created>1387901970115</created>
       <updated>1387901970115</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Autocomplete adapter now uses parseadatper&#10;">
+      <created>1388072862005</created>
+      <updated>1388072862005</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1639,7 +1621,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35302392" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35302392" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4416315" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43258426" sideWeight="0.59585124" order="3" side_tool="false" content_ui="tabs" />
@@ -1648,7 +1630,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300562" sideWeight="0.55293274" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39662448" sideWeight="0.55293274" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39662448" sideWeight="0.55293274" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1685,7 +1667,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43258426" sideWeight="0.59585124" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300562" sideWeight="0.55293274" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39691445" sideWeight="0.55293274" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39662448" sideWeight="0.55293274" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1713,7 +1695,8 @@
     <MESSAGE value="Switched over to gradle build" />
     <MESSAGE value="Switched over to gradle build&#10;" />
     <MESSAGE value="Record location of photo then save in service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Record location of photo then save in service" />
+    <MESSAGE value="Autocomplete adapter now uses parseadatper&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autocomplete adapter now uses parseadatper&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1723,16 +1706,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../untitled2/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="72" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../untitled1/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
-      </provider>
-    </entry>
     <entry file="file://$ANDROID_HOME$/samples/android-19/connectivity/BasicNetworking/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="29" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
@@ -1772,12 +1745,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Insurance/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="27" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690" />
+        <state line="15" column="27" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="426" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="426">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Insurance/insurance.sh">
@@ -1823,24 +1800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Insurance/res/layout/header.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1861,13 +1820,6 @@
     <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="21" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="67" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
@@ -2018,16 +1970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="19" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="1755">
-          <folding>
-            <element signature="e#2616#2878#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/LoginFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="63" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
@@ -2070,33 +2012,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/PredefinedListFragmentDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="74" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2145">
+        <state line="50" column="6" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin/src/com/rsxsoftware/Admin/AdminActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="24" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="9" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <folding>
-            <element signature="e#3073#3088#0" expanded="true" />
-            <element signature="e#3112#3358#0" expanded="true" />
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3455#3468#0" expanded="true" />
-            <element signature="e#4061#4084#0" expanded="true" />
-            <element signature="e#4903#4978#0" expanded="true" />
-            <element signature="e#5099#5111#0" expanded="true" />
-            <element signature="e#5113#5425#0" expanded="true" />
-            <element signature="e#5410#5411#0" expanded="true" />
-            <element signature="e#5445#5456#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="71" selection-start="5019" selection-end="5019" vertical-scroll-proportion="0.48129675" vertical-offset="1592" max-vertical-offset="2040">
+        <state line="133" column="87" selection-start="4855" selection-end="4855" vertical-scroll-proportion="0.0" vertical-offset="1595" max-vertical-offset="1995">
           <folding>
-            <element signature="e#1346#1631#0" expanded="true" />
-            <element signature="e#1620#1621#0" expanded="true" />
-            <element signature="e#2786#3271#0" expanded="true" />
-            <element signature="e#3251#3252#0" expanded="true" />
-            <element signature="e#4747#5033#0" expanded="true" />
+            <element signature="e#2061#3121#0" expanded="true" />
+            <element signature="e#2426#2437#0" expanded="true" />
+            <element signature="e#2609#3094#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#3250#3407#0" expanded="true" />
+            <element signature="e#3396#3397#0" expanded="true" />
+            <element signature="e#4515#4953#0" expanded="true" />
+            <element signature="e#4938#4939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="86" selection-start="2773" selection-end="2773" vertical-scroll-proportion="0.0" vertical-offset="815" max-vertical-offset="1485">
+          <folding>
+            <element signature="e#2446#2853#0" expanded="true" />
+            <element signature="e#2834#2835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="70" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="74" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="66" selection-start="5327" selection-end="5327" vertical-scroll-proportion="0.44987774" vertical-offset="1736" max-vertical-offset="2145">
+          <folding>
+            <element signature="e#3102#3117#0" expanded="true" />
+            <element signature="e#3141#3387#0" expanded="true" />
+            <element signature="e#3368#3369#0" expanded="true" />
+            <element signature="e#3484#3497#0" expanded="true" />
+            <element signature="e#4090#4113#0" expanded="true" />
+            <element signature="e#4932#5007#0" expanded="true" />
+            <element signature="e#5128#5140#0" expanded="true" />
+            <element signature="e#5142#5399#0" expanded="true" />
+            <element signature="e#5384#5385#0" expanded="true" />
+            <element signature="e#5419#5430#0" expanded="true" />
           </folding>
         </state>
       </provider>

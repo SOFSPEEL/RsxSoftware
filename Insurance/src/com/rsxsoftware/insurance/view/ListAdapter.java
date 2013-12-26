@@ -32,6 +32,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
         setPaginationEnabled(true);
         this.userActivity = userActivity;
         this.fragment = fragment;
+        setImageKey("blah");
         setPlaceholder(userActivity.getResources().getDrawable(android.R.drawable.progress_horizontal));
     }
 
@@ -154,8 +155,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     object.deleteEventually();
-                    //TODO: delete item in adapter
-                    notifyDataSetChanged();
+                    fragment.refresh();
                 }
             }).setNegativeButton(R.string.no, null).create();
             return alertDialog;
