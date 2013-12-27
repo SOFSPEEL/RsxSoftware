@@ -17,9 +17,6 @@ import com.rsxsoftware.insurance.business.ParseObjectInterface;
 import com.rsxsoftware.insurance.view.bind.CapturePhoto;
 import com.rsxsoftware.insurance.view.bind.OnCapturePhotoListener;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Created with IntelliJ IDEA.
  * User: steve.fiedelberg
@@ -33,7 +30,6 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
     protected UserActivity userActivity;
     protected ListAdapter adapter;
     protected ListView lv;
-    private List<ParseObjectBase> parseObjects = new ArrayList<ParseObjectBase>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -63,22 +59,14 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
         transaction.replace(R.id.fragment_container, listWithAdapterFragment).addToBackStack(null).commit();
     }
 
-
-    protected void addToAdapter(ParseObject object) {
-        parseObjects.add((ParseObjectBase) object);
-
-        adapter.notifyDataSetChanged();
-
-        lv.smoothScrollToPosition(parseObjects.size());
-    }
-
     private ListAdapter createAdapter() {
 
         ParseQueryAdapter.QueryFactory<ParseObject> factory =
                 new ParseQueryAdapter.QueryFactory<ParseObject>() {
                     public ParseQuery create() {
-                        final ParseQuery query = new ParseQuery(getSelected().createChildObject().getTableName()).orderByAscending("desc");
-                        query.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
+                        final ParseObjectInterface childObject = getSelected().createChildObject();
+                        final ParseQuery query = CacheUtils.createQuerySetCachePolicy(childObject.getTableName());
+                        query.whereEqualTo(childObject.getRelationName(), getRealObject()).orderByAscending("desc");
                         return query;
                     }
                 };
@@ -110,7 +98,6 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
     }
 
     private CapturePhoto capturePhoto;
-
 
 
     public void capturePhoto(View iv, ParseObject object, String photo, int requestCode, final OnCapturePhotoListener onCapturePhotoListener) {

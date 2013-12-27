@@ -1,5 +1,7 @@
 package com.rsxsoftware.insurance.prefs;
 
+import com.parse.ParseObject;
+
 import java.io.File;
 
 public class PhotoSave {
@@ -7,18 +9,22 @@ public class PhotoSave {
     private final String objectId;
     private final String key;
     private final String path;
+    private final String className;
 
-    public PhotoSave(String objectId, String key, String path) {
-        this.objectId = objectId;
+    public PhotoSave(ParseObject object, String key, String path) {
+        this.objectId = object.getObjectId();
+        className = object.getClassName();
         this.key = key;
         this.path = path;
     }
 
     public PhotoSave(String storageValue) {
         final String[] split = storageValue.split(DELIMITER);
-        objectId = split[0];
-        key = split[1];
-        path = split[2];
+        int i = 0;
+        objectId = split[i];
+        className = split[++i];
+        key = split[++i];
+        path = split[++i];
     }
 
     public String getObjectId() {
@@ -38,11 +44,17 @@ public class PhotoSave {
     }
 
     public String createStorageValue() {
-        return getObjectId() + DELIMITER + getKey() + DELIMITER + getPath();
+        return getObjectId() + DELIMITER + className + DELIMITER + getKey() + DELIMITER + getPath();
+    }
+
+    public String getClassName() {
+        return className;
     }
 
     @Override
     public String toString() {
         return createStorageValue();
     }
+
+
 }

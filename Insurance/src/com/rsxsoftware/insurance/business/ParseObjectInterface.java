@@ -1,6 +1,5 @@
 package com.rsxsoftware.insurance.business;
 
-import com.parse.FindCallback;
 import com.parse.ParseObject;
 
 /**
@@ -12,8 +11,6 @@ public interface ParseObjectInterface {
     String getRelationName();
 
     ParseObjectInterface createChildObject();
-
-    void fetchList(FindCallback updateListCallback);
 
     ParseObject getRealObject();
 }

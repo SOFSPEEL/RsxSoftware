@@ -4,13 +4,10 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import com.parse.*;
 import com.rsxsoftware.insurance.ParseFilesSaveService;
@@ -37,7 +34,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
         this.userActivity = userActivity;
         this.fragment = fragment;
         setImageKey("photo");
-        setPlaceholder(userActivity.getResources().getDrawable(android.R.drawable.ic_menu_camera));
+//        setPlaceholder(userActivity.getResources().getDrawable(android.R.drawable.ic_menu_camera));
     }
 
     @Override
@@ -46,20 +43,15 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
         final TextView tv = (TextView) row.findViewById(R.id.desc);
         tv.setText(object.getString("desc"));
 
-        final ImageButton iv = (ImageButton) row.findViewById(R.id.image);
+        final ParseImageView iv = (ParseImageView) row.findViewById(R.id.image);
         final ParseFile photo = object.getParseFile("photo");
 
-        try {
-            if (photo != null && photo.getData() != null) {
 
-                byte[] data = photo.getData();
-                Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
-                iv.setImageBitmap(bmp);
-            } else {
-                iv.setImageResource(android.R.drawable.ic_menu_camera);
-            }
-        } catch (ParseException e) {
-            e.printStackTrace();
+        if (photo != null) {
+            iv.setParseFile(photo);
+            iv.loadInBackground();
+        } else {
+            iv.setImageResource(R.drawable.ic_menu_camera);
         }
 
         iv.setOnClickListener(new View.OnClickListener() {
@@ -160,12 +152,12 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
              */
             private PopupView addSaveCopyAsMaster() {
 
-                return new PopupView(R.string.save_as_master, android.R.drawable.ic_menu_save, new View.OnClickListener() {
+                return new PopupView(R.string.save_as_master, R.drawable.ic_menu_save, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
                         object.put("master", true);
-                        object.saveEventually();
+                        object.saveInBackground();
                     }
                 });
             }
@@ -198,7 +190,7 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
             final AlertDialog alertDialog = new AlertDialog.Builder(userActivity).setTitle(youSure).setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    object.deleteEventually();
+                    object.deleteInBackground();
                     fragment.refresh();
                 }
             }).setNegativeButton(R.string.no, null).create();

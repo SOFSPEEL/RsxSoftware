@@ -2,7 +2,6 @@ package com.rsxsoftware.insurance.view;
 
 import com.parse.*;
 import com.rsxsoftware.insurance.business.Inventory;
-import com.rsxsoftware.insurance.business.ParseObjectBase;
 import com.rsxsoftware.insurance.business.ParseObjectFetch;
 import com.rsxsoftware.insurance.business.ParseObjectInterface;
 
@@ -30,19 +29,6 @@ public class UserFacade extends ParseObjectFetch {
     @Override
     public ParseObjectInterface createChildObject() {
         return new Inventory();
-    }
-
-    @Override
-    public void fetchList(FindCallback updateListCallback) {
-
-        final ParseObject object = getRealObject();
-        if (object.getObjectId() != null) {
-            final ParseObjectInterface childObject = createChildObject();
-
-            final ParseQuery<ParseObjectBase> query = new ParseQuery(childObject.getTableName());
-            query.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
-            query.whereEqualTo("user", object).findInBackground(updateListCallback);
-        }
     }
 
     @Override

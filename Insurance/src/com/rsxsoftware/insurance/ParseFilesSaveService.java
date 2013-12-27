@@ -8,7 +8,6 @@ import android.os.IBinder;
 import android.util.Log;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
-import com.rsxsoftware.insurance.business.Content;
 import com.rsxsoftware.insurance.prefs.PhotoSave;
 import org.apache.commons.io.FileUtils;
 
@@ -54,14 +53,13 @@ public class ParseFilesSaveService extends IntentService {
                 parseFile.save();
                 Log.d(TAG, "Saved parse file: " + photoSave);
 
-                final Content content = new Content();
-
-                content.setObjectId(photoSave.getObjectId());
-                content.put(photoSave.getKey(), parseFile);
-                Log.d(TAG, "Saving content: " + photoSave);
-                content.save();
+                final ParseObject object = ParseObject.create(photoSave.getClassName());
+                object.setObjectId(photoSave.getObjectId());
+                object.put(photoSave.getKey(), parseFile);
+                Log.d(TAG, "Saving: " + photoSave);
+                object.save();
                 listRemove.add(storageValue);
-                Log.d(TAG, "Saved content: " + photoSave);
+                Log.d(TAG, "Saved: " + photoSave);
 
 
             } catch (Exception e) {
@@ -91,7 +89,7 @@ public class ParseFilesSaveService extends IntentService {
     }
 
     public static void add(String filePath, ParseObject object, String key, Context context) {
-        final String valueToStore = new PhotoSave(object.getObjectId(), key, filePath).createStorageValue();
+        final String valueToStore = new PhotoSave(object, key, filePath).createStorageValue();
         final Set<String> files = fetch(context);
         if (!files.contains(valueToStore)){
             files.add(valueToStore);

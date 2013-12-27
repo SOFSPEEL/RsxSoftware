@@ -71,8 +71,7 @@ public class Header<TList extends ParseObjectBase> {
                 final FragmentManager fragmentManager = userActivity.getFragmentManager();
                 final ProgressFragment progressFragment = new ProgressFragment(fragmentManager, "Fetching");
 
-                final ParseQuery<Inventory> inventory = new ParseQuery<Inventory>("Inventory");
-                inventory.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
+                final ParseQuery inventory = CacheUtils.createQuerySetCachePolicy("Inventory");
                 inventory.whereEqualTo("master", true).findInBackground(new FindCallback<Inventory>() {
                     @Override
                     public void done(List<Inventory> inventories, ParseException e) {
@@ -113,8 +112,9 @@ public class Header<TList extends ParseObjectBase> {
                     newObject.put("desc", value);
                     final ParseRelation<ParseObject> relation = newObject.getRelation(newObject.getRelationName());
                     relation.add(listFragment.getRealObject());
-                    newObject.saveEventually();
-                    listFragment.addToAdapter(newObject);
+                    autoComplete.setText("");
+                    newObject.saveInBackground();
+                    listFragment.refresh();
                 }
 
             }
@@ -130,9 +130,8 @@ public class Header<TList extends ParseObjectBase> {
             super(userActivity, new ParseQueryAdapter.QueryFactory<TList>() {
                 @Override
                 public ParseQuery<TList> create() {
-                    final ParseQuery parseQuery = new ParseQuery(listFragment.getSelected().createChildObject().getTableName());
-                    parseQuery.setCachePolicy(ParseQuery.CachePolicy.CACHE_ELSE_NETWORK);
-                    return parseQuery.orderByAscending("desc");
+
+                    return CacheUtils.createQuerySetCachePolicy(listFragment.getSelected().createChildObject().getTableName()).orderByAscending("desc");
                 }
             }, android.R.layout.simple_dropdown_item_1line);
             setTextKey("desc");

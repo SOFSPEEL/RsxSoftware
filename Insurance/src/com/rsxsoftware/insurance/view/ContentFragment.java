@@ -73,7 +73,7 @@ public class ContentFragment extends FragmentBase {
         public void onClick(View v) {
 
             binder.toObject();
-            getRealObject().saveEventually();
+            getRealObject().saveInBackground();
 
             final Activity activity = getActivity();
             activity.startService(new Intent(activity, ParseFilesSaveService.class));

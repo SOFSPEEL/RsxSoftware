@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import com.parse.ParseAnalytics;
+import com.parse.ParseAnonymousUtils;
 import com.parse.ParseUser;
 import com.rsxsoftware.insurance.R;
 
@@ -14,23 +15,31 @@ public class UserActivity extends Activity {
 
     public static final String TAG = "Inventory";
 
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
 
         ParseAnalytics.trackAppOpened(getIntent());
 
-//        final ProgressFragment progressFragment = new ProgressFragment(getFragmentManager(), "Attempting to automatically login");
-
-        final boolean haveUser = ParseUser.getCurrentUser() != null;
-//        progressFragment.dismiss();
-        if (haveUser) {
+        final boolean isAnonymous = ParseAnonymousUtils.isLinked(ParseUser.getCurrentUser());
+        if (!isAnonymous) {
             new InventoriesFragment().switchTo(this, new InventoriesFragment(), new UserFacade());
-        }
-        else {
+        } else {
             addFrag(new LoginFragment());
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+//        new AlertDialog.Builder(this).setTitle("Are you sure you want to exit").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                finish();
+//            }
+//        }).show();
+
     }
 
     private int addFrag(Fragment fragment) {
