@@ -12,6 +12,7 @@ public abstract class FragmentBase extends Fragment {
 
     private ParseObjectInterface selected;
 
+
     public ParseObjectInterface getSelected() {
         return selected;
     }
@@ -24,5 +25,6 @@ public abstract class FragmentBase extends Fragment {
     public ParseObject getRealObject() {
         return selected.getRealObject();
     }
+
 
 }

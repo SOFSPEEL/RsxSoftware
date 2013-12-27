@@ -2,6 +2,7 @@ package com.rsxsoftware.insurance.view;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import com.parse.ParseQueryAdapter;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
 import com.rsxsoftware.insurance.business.ParseObjectInterface;
+import com.rsxsoftware.insurance.view.bind.CapturePhoto;
+import com.rsxsoftware.insurance.view.bind.OnCapturePhotoListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -104,5 +107,25 @@ public abstract class ListFragment<TList extends ParseObjectBase> extends Fragme
 
     public void refresh() {
         lv.setAdapter(createAdapter());
+    }
+
+    private CapturePhoto capturePhoto;
+
+
+
+    public void capturePhoto(View iv, ParseObject object, String photo, int requestCode, final OnCapturePhotoListener onCapturePhotoListener) {
+        capturePhoto = new CapturePhoto(requestCode, onCapturePhotoListener);
+        capturePhoto.showPopup(iv, object, photo);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (capturePhoto != null) {
+
+            capturePhoto.onActivityResult(requestCode, resultCode, data);
+
+        }
     }
 }

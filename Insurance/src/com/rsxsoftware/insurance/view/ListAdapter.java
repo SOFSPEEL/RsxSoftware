@@ -4,18 +4,22 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
-import com.parse.CountCallback;
-import com.parse.ParseException;
-import com.parse.ParseQueryAdapter;
-import com.parse.ParseUser;
+import com.parse.*;
+import com.rsxsoftware.insurance.ParseFilesSaveService;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.business.ParseObjectBase;
+import com.rsxsoftware.insurance.view.bind.OnCapturePhotoListener;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -32,22 +36,62 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
         setPaginationEnabled(true);
         this.userActivity = userActivity;
         this.fragment = fragment;
-        setImageKey("blah");
-        setPlaceholder(userActivity.getResources().getDrawable(android.R.drawable.progress_horizontal));
+        setImageKey("photo");
+        setPlaceholder(userActivity.getResources().getDrawable(android.R.drawable.ic_menu_camera));
     }
 
-
     @Override
-    public View getItemView(T object, View v, ViewGroup parent) {
+    public View getItemView(final T object, View v, ViewGroup parent) {
         final View row = userActivity.getLayoutInflater().inflate(R.layout.list_row, null);
         final TextView tv = (TextView) row.findViewById(R.id.desc);
         tv.setText(object.getString("desc"));
-        handleButtons(row, object);
+
+        final ImageButton iv = (ImageButton) row.findViewById(R.id.image);
+        final ParseFile photo = object.getParseFile("photo");
+
+        try {
+            if (photo != null && photo.getData() != null) {
+
+                byte[] data = photo.getData();
+                Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
+                iv.setImageBitmap(bmp);
+            } else {
+                iv.setImageResource(android.R.drawable.ic_menu_camera);
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fragment.capturePhoto(iv, object, "photo", 1, new OnCapturePhotoListener() {
+                    @Override
+                    public void onHavePhoto(String photoFilePath) {
+
+                        if (photoFilePath != null) {
+
+                            try {
+                                final byte[] bytes = FileUtils.readFileToByteArray(new File(photoFilePath));
+                                ParseFilesSaveService.add(photoFilePath, object, "photo", userActivity);
+                                BitmapUtil.ToImageView(iv, bytes);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                });
+
+            }
+        });
+
+        handleRowClicks(row, object);
         return row;
 
     }
 
-    protected void handleButtons(final View row, final ParseObjectBase object) {
+    protected void handleRowClicks(final View row, final ParseObjectBase object) {
 
         final Button buttonChildren = (Button) row.findViewById(R.id.children);
 

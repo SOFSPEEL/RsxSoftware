@@ -4,32 +4,50 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-    <TextView
-            android:id="@+id/title"
+    <LinearLayout
+            android:id="@+id/topButtons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/inventories"
-            />
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+        <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="0dip"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPredefinedButton"
+                />
+
+        <ImageButton
+                android:src="@drawable/ic_menu_refresh"
+                android:layout_width="0dip"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:id="@+id/refreshButton"
+                />
+    </LinearLayout>
 
     <LinearLayout
-            android:layout_below="@+id/title"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_centerVertical="true"
+            android:layout_below="@id/topButtons"
             >
 
-        <AutoCompleteTextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:id="@+id/autoComplete"
-                />
-
         <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                    android:layout_width="0dip"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/autoComplete"
+                    />
 
             <ImageButton
                     android:src="@android:drawable/ic_menu_add"
@@ -39,22 +57,8 @@
                     android:id="@+id/addButton"
                     />
 
-            <ImageButton
-                    android:src="@android:drawable/ic_menu_gallery"
-                    android:layout_width="0dip"
-                    android:layout_weight="20"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/addPredefinedButton"
-                    />
-
-            <ImageButton
-                    android:src="@drawable/ic_menu_refresh"
-                    android:layout_width="0dip"
-                    android:layout_weight="20"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/refreshButton"
-                    />
         </LinearLayout>
+
 
     </LinearLayout>
 

@@ -30,6 +30,6 @@
         </activity>
 
 
-        <service android:name=".ParseFileSaveService"/>
+        <service android:name=".ParseFilesSaveService"/>
     </application>
 </manifest>

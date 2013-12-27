@@ -2,14 +2,13 @@ package com.rsxsoftware.insurance.view;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import com.rsxsoftware.insurance.ParseFileSaveService;
+import com.rsxsoftware.insurance.ParseFilesSaveService;
 import com.rsxsoftware.insurance.R;
 import com.rsxsoftware.insurance.view.bind.*;
 
@@ -18,15 +17,18 @@ import com.rsxsoftware.insurance.view.bind.*;
  */
 public class ContentFragment extends FragmentBase {
 
+    public static final int REQUEST_PHOTO = 1;
+    public static final int REQUEST_RECEIPT = 2;
+
     @Bind(id = R.id.desc, key = "desc", Converter = BinderText.class)
     private EditText desc;
     @Bind(id = R.id.cost, key = "cost", Converter = BinderNumber.class)
     private EditText cost;
     @Bind(id = R.id.date_purchased, key = "datePurchased", Converter = BinderDate.class)
     private DatePicker datePurchased;
-    @Bind(id = R.id.photoLayout, key = "photo", Converter = BinderPhoto.class, requestCode = 1, text = "Item")
+    @Bind(id = R.id.photoLayout, key = "photo", Converter = BinderPhoto.class, requestCode = REQUEST_PHOTO, text = "Item")
     public PhotoLayout photoLayout;
-    @Bind(id = R.id.receiptLayout, key = "receipt", Converter = BinderPhoto.class, requestCode = 2, text = "Receipt")
+    @Bind(id = R.id.receiptLayout, key = "receipt", Converter = BinderPhoto.class, requestCode = REQUEST_RECEIPT, text = "Receipt")
     public PhotoLayout receiptLayout;
 
     @Override
@@ -48,37 +50,15 @@ public class ContentFragment extends FragmentBase {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if (resultCode == Activity.RESULT_OK) {
-
-            if (requestCode > 100) {
-                showPhotoFromFile(requestCode, data);
-            } else {
-                showPhotoFromCamera(requestCode);
-            }
+        CapturePhoto capturePhoto = null;
+        if ((requestCode == REQUEST_PHOTO) || (requestCode == (100 + REQUEST_PHOTO))) {
+            capturePhoto = photoLayout.getCapturePhoto();
+        } else if ((requestCode == REQUEST_RECEIPT) || (requestCode == (100 + REQUEST_RECEIPT))) {
+            capturePhoto = receiptLayout.getCapturePhoto();
         }
-    }
 
-    private void showPhotoFromFile(int requestCode, Intent data) {
-        Uri uri = data.getData();
-        String scheme = uri.getScheme();
-        if ("file".equals(scheme)) {
-            final String path = uri.getPath();
-            if (requestCode == 101) {
-                photoLayout.setPhotoFile(path);
-            } else if (requestCode == 102) {
-                receiptLayout.setPhotoFile(path);
-            }
-        } else if ("content".equals(scheme)) {
-            // process as a uri that points to a content item
-        }
-    }
-
-    private void showPhotoFromCamera(int requestCode) {
-        if (requestCode == 1 ) {
-            photoLayout.setPhotoImage();
-        } else if (requestCode == 2) {
-            receiptLayout.setPhotoImage();
+        if (capturePhoto != null) {
+            capturePhoto.onActivityResult(requestCode, resultCode, data);
         }
     }
 
@@ -96,7 +76,7 @@ public class ContentFragment extends FragmentBase {
             getRealObject().saveEventually();
 
             final Activity activity = getActivity();
-            activity.startService(new Intent(activity, ParseFileSaveService.class));
+            activity.startService(new Intent(activity, ParseFilesSaveService.class));
 
             getFragmentManager().popBackStack();
         }

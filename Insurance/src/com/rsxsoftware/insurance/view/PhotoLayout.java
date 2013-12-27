@@ -2,13 +2,17 @@ package com.rsxsoftware.insurance.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.util.AttributeSet;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.rsxsoftware.insurance.R;
+import com.rsxsoftware.insurance.view.bind.CapturePhoto;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
 
 import static com.rsxsoftware.insurance.view.PhotoLayout.PhotoState.*;
 
@@ -20,7 +24,7 @@ public class PhotoLayout extends RelativeLayout {
     PhotoState photoState = TAKE_PHOTO;
     private ImageView photo;
     private ImageButton del;
-    private String filePath;
+    private CapturePhoto capturePhoto;
 
 
     public PhotoLayout(Context context, AttributeSet attrs) {
@@ -34,10 +38,6 @@ public class PhotoLayout extends RelativeLayout {
         tv.setText(text);
     }
 
-    public boolean havePhoto() {
-        return photoState == PhotoLayout.PhotoState.HAVE_PHOTO;
-    }
-
     public void setPhotoImage(Bitmap bitmap) {
         setState(HAVE_PHOTO);
         photo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
@@ -45,39 +45,14 @@ public class PhotoLayout extends RelativeLayout {
     }
 
 
-    public void setPhotoImage() {
-        if (filePath != null){
-            setPhotoFile(filePath);
+    public void setPic(String photoFilePath) {
+
+        try {
+            BitmapUtil.ToImageView(photo, FileUtils.readFileToByteArray(new File(photoFilePath)));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    }
 
-    public void setPhotoFile(String filePath) {
-        this.filePath = filePath;
-        setPic();
-    }
-
-
-    private void setPic() {
-        // Get the dimensions of the View
-        int targetW = photo.getWidth();
-        int targetH = photo.getHeight();
-
-        // Get the dimensions of the bitmap
-        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-        bmOptions.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(filePath, bmOptions);
-        int photoW = bmOptions.outWidth;
-        int photoH = bmOptions.outHeight;
-
-        // Determine how much to scale down the image
-        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
-
-        // Decode the image file into a Bitmap sized to fill the View
-        bmOptions.inJustDecodeBounds = false;
-        bmOptions.inSampleSize = scaleFactor;
-        bmOptions.inPurgeable = true;
-
-        photo.setImageBitmap(BitmapFactory.decodeFile(filePath, bmOptions));
     }
 
     private void setState(PhotoState havePhoto) {
@@ -108,15 +83,14 @@ public class PhotoLayout extends RelativeLayout {
     }
 
 
-
-    public void setFilePath(String filePath) {
-        this.filePath = filePath;
+    public void setCapturePhoto(CapturePhoto capturePhoto) {
+        this.capturePhoto = capturePhoto;
     }
 
-    public String getFilePath() {
-        return filePath;
-    }
 
+    public CapturePhoto getCapturePhoto() {
+        return capturePhoto;
+    }
 
 
     enum PhotoState {
