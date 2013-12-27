@@ -23,8 +23,6 @@ public class AdminActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin);
-
-
     }
 
     public void createRoleAdmin(View view) {
@@ -95,7 +93,8 @@ public class AdminActivity extends Activity {
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    doLoadCsv();
+
+                    doLoadCsv(ParseUser.logIn("Steve", "Junk"));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -105,7 +104,7 @@ public class AdminActivity extends Activity {
 
     }
 
-    private void doLoadCsv() throws Exception {
+    private void doLoadCsv(ParseUser parseUser) throws Exception {
         final HashMap<String, List<String>> map = new HashMap<String, List<String>>();
         final List csv = FileUtils.readLines(new File("mnt/sdcard", "HomeInventory.csv"));
         for (Object obj : csv) {
@@ -120,10 +119,11 @@ public class AdminActivity extends Activity {
             contents.add(content);
         }
 
-        final ParseObject inv = new ParseObject("Inventory");
-        setParms(inv, "Master Inventory", true).save();
+        ParseObject inv = new ParseObject("Inventory");
+        inv = setParms(inv, "Master Inventory", true);
+        inv.getRelation("users").add(parseUser);
+        inv.save();
         final HashMap<String, ParseObject> mapContents = new HashMap<String, ParseObject>();
-
 
         for (Map.Entry<String, List<String>> entry : map.entrySet()) {
             final ParseObject room = new ParseObject("Room");

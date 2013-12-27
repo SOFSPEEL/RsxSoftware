@@ -46,18 +46,37 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
         final ParseImageView iv = (ParseImageView) row.findViewById(R.id.image);
         final ParseFile photo = object.getParseFile("photo");
 
-
         if (photo != null) {
             iv.setParseFile(photo);
             iv.loadInBackground();
         } else {
             iv.setImageResource(R.drawable.ic_menu_camera);
         }
+        iv.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
 
+                new YesNoAlertDialogFragment("Delete Photo", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        object.remove("photo");
+                        object.saveInBackground();
+                        fragment.refresh();
+                    }
+                }).show(userActivity.getFragmentManager());
+
+                return true;
+            }
+        });
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                capturePhoto();
+
+            }
+
+            private void capturePhoto() {
                 fragment.capturePhoto(iv, object, "photo", 1, new OnCapturePhotoListener() {
                     @Override
                     public void onHavePhoto(String photoFilePath) {
@@ -65,16 +84,14 @@ public abstract class ListAdapter<T extends ParseObjectBase> extends ParseQueryA
                         if (photoFilePath != null) {
 
                             try {
-                                final byte[] bytes = FileUtils.readFileToByteArray(new File(photoFilePath));
                                 ParseFilesSaveService.add(photoFilePath, object, "photo", userActivity);
-                                BitmapUtil.ToImageView(iv, bytes);
+                                BitmapUtil.ToImageView(iv, FileUtils.readFileToByteArray(new File(photoFilePath)));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
                         }
                     }
                 });
-
             }
         });
 
