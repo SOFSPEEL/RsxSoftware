@@ -119,7 +119,7 @@ public class AdminActivity extends Activity {
             contents.add(content);
         }
 
-        ParseObject inv = new ParseObject("Inventory");
+        ParseObject inv = new ParseObject("Inventory");`
         inv = setParms(inv, "Master Inventory", true);
         inv.getRelation("users").add(parseUser);
         inv.save();
