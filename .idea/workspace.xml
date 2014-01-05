@@ -1,31 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayoutPreviewToolWindow">
-    <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
-    </option>
-  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
-    <layouts>
-      <layout url="file://$PROJECT_DIR$/Insurance/res/layout/list_row.xml">
-        <config>
-          <device>Nexus 4</device>
-          <theme>@android:style/Theme.Holo.Light</theme>
-        </config>
-      </layout>
-    </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="ApplicationLogger" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9d2bbdb-a079-4d0c-8c3a-3735da453053" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="610098ea-ec26-4983-80b7-c2a552d08a52" name="Default" comment="Exception handling&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/destroy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/resources/inherit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/CountCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/CountCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/DeleteCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/DeleteCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/ExceptionCatcher.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/ExceptionCatcher.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/FindCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/FindCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/FunctionCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/FunctionCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/GetCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/GetCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/GetDataCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/GetDataCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/Insurance.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/Insurance.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/LocationCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/LocationCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/LogInCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/LogInCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9.jar.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/Parse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/Parse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseACL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseACL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseAnalytics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseAnalytics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseAnonymousUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseAnonymousUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseClassName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseClassName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseCloud.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseCloud.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseFacebookUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseFacebookUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseGeoPoint.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseGeoPoint.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseImageView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseImageView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseInstallation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseInstallation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParsePush.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParsePush.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseQuery.CachePolicy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseQuery.CachePolicy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseQuery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseQuery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseQueryAdapter.OnQueryLoadListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseQueryAdapter.OnQueryLoadListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseQueryAdapter.QueryFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseQueryAdapter.QueryFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseQueryAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseQueryAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseRole.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseRole.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseTwitterUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseTwitterUtils.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ParseUser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ParseUser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/ProgressCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/ProgressCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/PushCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/PushCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/PushService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/PushService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/RefreshCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/RefreshCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/RequestPasswordResetCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/RequestPasswordResetCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/SaveCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/SaveCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/SendCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/SendCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/SignUpCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/SignUpCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/StandardPushCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/class-use/StandardPushCallback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/ant.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/ant.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/lib/backbone-localstorage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/backbone-parse.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/lib/backbone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/lib/coffee-script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/docs/docco.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/exceptions.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/exceptions.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/insurance.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/insurance.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/lib/jquery-1.5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/lib/json2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/com/parse/package-use.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/proguard-project.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/proguard-project.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionThrower/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/Parse-1.3.9-javadoc/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionCatcher/libs/third_party_licenses.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/docs/todos.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExceptionViewer/lib/underscore-1.1.6.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__Parse_1_3_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exceptions/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exceptions/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exceptions/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exceptions/index.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_2_3.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/joda_time_2_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Todo.java" afterPath="$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/Exception.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/InsuranceApplication.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/InsuranceApplication.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/ParseFilesSaveService.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/ParseFilesSaveService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/Content.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/business/Content.java" />
@@ -65,8 +196,15 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/CapturePhoto.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/bind/CapturePhoto.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/OnCapturePhotoListener.java" afterPath="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/bind/OnCapturePhotoListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Insurance/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExceptionThrower/ExceptionThrower.iml" afterPath="$PROJECT_DIR$/ExceptionThrower/ExceptionThrower.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/Insurance.iml" afterPath="$PROJECT_DIR$/Insurance/Insurance.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Insurance/res/layout/photo.xml" afterPath="$PROJECT_DIR$/Insurance/res/layout/photo.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RsxSoftware.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +216,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="$USER_HOME$/Documents/Zonar2020" />
+    <option name="PATCH_PATH" value="" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -121,38 +259,8 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java" line="57" class="com.rsxsoftware.exceptionthrower.MyApplication$1" package="com.rsxsoftware.exceptionthrower">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java" line="53" class="com.rsxsoftware.exceptionthrower.MyApplication$1" package="com.rsxsoftware.exceptionthrower">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java" line="47" class="com.rsxsoftware.exceptionthrower.MyApplication$1" package="com.rsxsoftware.exceptionthrower">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java" line="63" class="com.rsxsoftware.exceptionthrower.ApplicationLogger$1" package="com.rsxsoftware.exceptionthrower">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -177,19 +285,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ExceptionThrower/AndroidManifest.xml">
+      <file leaf-file-name="backbone-parse.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExceptionViewer/backbone-parse.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="582" selection-end="582" vertical-scroll-proportion="0.45882353" vertical-offset="0" max-vertical-offset="585">
+            <state line="31" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExceptionThrower/gradle/wrapper/gradle-wrapper.properties">
+      <file leaf-file-name="ApplicationLogger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="55" column="30" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1860">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3392#3400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exceptions.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExceptionViewer/exceptions.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="172" column="11" selection-start="3921" selection-end="3928" vertical-scroll-proportion="-8.192307" vertical-offset="2367" max-vertical-offset="4875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ExceptionViewer/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="14" selection-start="620" selection-end="620" vertical-scroll-proportion="0.11923689" vertical-offset="180" max-vertical-offset="1530">
+              <folding>
+                <marker date="1388890410000" expanded="true" signature="1624:1976" placeholder="..." />
+                <marker date="1388890410000" expanded="true" signature="1654:1856" placeholder="..." />
+                <marker date="1388890410000" expanded="true" signature="1883:1963" placeholder="..." />
+                <marker date="1388890410000" expanded="true" signature="2109:2263" placeholder="..." />
+                <marker date="1388890410000" expanded="true" signature="2340:2546" placeholder="..." />
+                <marker date="1388890410000" expanded="true" signature="2363:2530" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="18" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -198,66 +343,34 @@
       <file leaf-file-name="ThrowExceptionActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ThrowExceptionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-              <folding>
-                <element signature="e#615#616#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseFilesSaveService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/ParseFilesSaveService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.0" vertical-offset="388" max-vertical-offset="1395">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1022#1030#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Todo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Todo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="21" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="9" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java">
+      <file leaf-file-name="exceptions.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExceptionViewer/exceptions.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="35" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="1335">
+            <state line="14" column="20" selection-start="675" selection-end="676" vertical-scroll-proportion="-8.038462" vertical-offset="1" max-vertical-offset="3570">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todos.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Exceptions/js/todos.js">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="105" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6180">
+            <state line="12" column="10" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/bin/gradle/wrapper/gradle-wrapper.properties">
+      <file leaf-file-name="Exception.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/Exception.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="68" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExceptionThrower/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="29" selection-start="308" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="690">
+            <state line="15" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -277,6 +390,7 @@
     <option name="tasksExpandState">
       <map>
         <entry key="" value="true" />
+        <entry key="RsxSoftware/" value="true" />
       </map>
     </option>
     <option name="availableProjects">
@@ -284,31 +398,15 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="Admin" />
-              <option name="path" value="$PROJECT_DIR$/Admin" />
+              <option name="name" value="Desktop" />
+              <option name="path" value="$PROJECT_DIR$/.." />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
                 <option name="name" value=":" />
-                <option name="path" value="$PROJECT_DIR$/Admin" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="Insurance" />
-              <option name="path" value="$PROJECT_DIR$/Insurance" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value=":" />
-                <option name="path" value="$PROJECT_DIR$/Insurance" />
+                <option name="path" value="$PROJECT_DIR$/.." />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -327,6 +425,10 @@
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
+                <option name="name" value=":ExceptionCatcher" />
+                <option name="path" value="$PROJECT_DIR$/ExceptionCatcher" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
                 <option name="name" value=":ExceptionThrower" />
                 <option name="path" value="$PROJECT_DIR$/ExceptionThrower" />
               </ExternalProjectPojo>
@@ -337,608 +439,340 @@
     </option>
     <option name="availableTasks">
       <map>
-        <entry key="$PROJECT_DIR$">
+        <entry key="$PROJECT_DIR$/ExceptionCatcher">
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dexTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="packageRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateTestSources" />
+                <option name="description" value="Displays the Android dependencies of the project" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="androidDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
+                <option name="description" value="Assembles all Debug builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareReleaseDependencies" />
+                <option name="description" value="Assembles all Release builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dexRelease" />
+                <option name="description" value="Assembles the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="assembleTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="packageTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Build 'Debug' on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="connectedInstrumentTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestJavaRes" />
+                <option name="description" value="Assembles a bundle containing the library in Debug." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="bundleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lintTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="installTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="installDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Release build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="uninstallRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="packageDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dexDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/Admin">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="uninstallTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="dexTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="mergeReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="generateTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="packageRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="mergeTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="generateTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="assemble" />
+                <option name="description" value="Assembles a bundle containing the library in Release." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="bundleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="prepareTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="dexRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="packageTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Build 'Debug' on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="connectedInstrumentTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="assembleTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="uninstallDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="preTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="lintTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="mergeDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="installTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="compileDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="androidDependencies" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileDebugAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="preDebugBuild" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileDebugRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="generateDebugBuildConfig" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileLint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Installs the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="installDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Release build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="uninstallRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="mergeTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="packageDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processTestTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="compileTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="compileRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="dexDebug" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileReleaseAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="compileTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Build 'Debug' on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="connectedInstrumentTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="copyDebugLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="copyReleaseLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="dexTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="generateTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="generateTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="installTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on all variants." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="lintTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
                 <option name="name" value="mergeDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Admin" />
-                <option name="name" value="assembleDebug" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeDebugProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeReleaseProguardFiles" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="mergeTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageDebugJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageDebugLocalJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageReleaseJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageReleaseLocalJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="packageTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="preTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="prepareTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="processTestTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="uninstallTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ExceptionCatcher" />
+                <option name="name" value="validateDebugSigning" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1246,309 +1080,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/Insurance">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="uninstallTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="dexTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="mergeReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="generateTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="packageRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="mergeTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="generateTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="prepareTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="dexRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="packageTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Build 'Debug' on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="connectedInstrumentTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="assembleTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="uninstallDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="preTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="lintTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="mergeDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="installTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="installDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Release build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="uninstallRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="mergeTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="packageDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processTestTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="compileRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="dexDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Insurance" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="modificationStamps">
@@ -1560,89 +1091,45 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListPopupWindowMenu.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ProgressFragment.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/LoginFragment.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserFacade.java" />
-        <option value="$PROJECT_DIR$/Insurance/res/layout/header.xml" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/ICapturePhoto.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/OnCapturePhotoListener.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/CapturePhotoListener.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/BitmapUtil.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/prefs/Prefs.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/prefs/SaveFilesEventually.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/FragmentBase.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/BinderPhoto.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/PhotoLayout.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/bind/CapturePhoto.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/prefs/PhotoSave.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/ParseFilesSaveService.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectInterface.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/ParseObjectFetch.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/CacheUtils.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/business/Inventory.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListFragment.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/InsuranceApplication.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/Header.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ContentFragment.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/UserActivity.java" />
-        <option value="$PROJECT_DIR$/Insurance/res/layout/list_row.xml" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/YesNoAlertDialogFragment.java" />
-        <option value="$PROJECT_DIR$/Insurance/src/com/rsxsoftware/insurance/view/ListAdapter.java" />
-        <option value="$PROJECT_DIR$/Admin/admin.sh" />
-        <option value="$PROJECT_DIR$/Admin/src/com/rsxsoftware/Admin/AdminActivity.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/InsuranceApplication.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/UserActivity.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Application.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ExceptionActivity.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Inventory.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Exception.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MainActivity.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ThrowExceptionActivity.java" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Admin/build.gradle" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/ExceptionThrower/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$APPLICATION_HOME_DIR$/bin/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/Exceptions/index.html" />
-        <option value="$PROJECT_DIR$/Exceptions/js/exceptions.js" />
-        <option value="$PROJECT_DIR$/Exceptions/css/todos.css" />
-        <option value="$PROJECT_DIR$/Exceptions/js/todos.js" />
+        <option value="$USER_HOME$/Downloads/Todo-master/js/todos.js" />
         <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Todo.java" />
+        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ExceptionLog.java" />
+        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Log.java" />
+        <option value="$PROJECT_DIR$/ExceptionThrower/ExceptionCatcher.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/MyApplication.java" />
+        <option value="$PROJECT_DIR$/ExceptionThrower/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java" />
         <option value="$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$USER_HOME$/Documents/Zonar2020/Fips/build.gradle" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/build.gradle" />
+        <option value="$PROJECT_DIR$/ExceptionThrower/build.gradle" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java" />
+        <option value="$USER_HOME$/Downloads/Backbone.TableView-master/backbone.tableview.coffee" />
+        <option value="$USER_HOME$/Downloads/Backbone.TableView-master/1.html" />
+        <option value="$USER_HOME$/Downloads/Backbone.TableView-master/backbone.tableview.js" />
+        <option value="$USER_HOME$/Downloads/Backbone.TableView-master/1.js" />
+        <option value="$PROJECT_DIR$/ExceptionViewer/js/todos.js" />
+        <option value="$PROJECT_DIR$/backbone-todojs-coffeescript-parse-gh-pages/todos.coffee" />
+        <option value="$PROJECT_DIR$/backbone-todojs-coffeescript-parse-gh-pages/index.html" />
+        <option value="$PROJECT_DIR$/ExceptionViewer/todos.css" />
+        <option value="$PROJECT_DIR$/ExceptionViewer/todos.coffee" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/Logger.java" />
+        <option value="$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/Exception.java" />
+        <option value="$PROJECT_DIR$/ExceptionViewer/exceptions.css" />
+        <option value="$PROJECT_DIR$/ExceptionViewer/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ExceptionViewer/exceptions.coffee" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1002" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Android Lint</id>
-          </State>
-          <State>
-            <id>Gradle</id>
-          </State>
-          <State>
-            <id>Probable bugsGradle</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+    <option name="width" value="1440" />
+    <option name="height" value="835" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1671,13 +1158,16 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="RsxSoftware" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1690,8 +1180,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RsxSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RsxSoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExceptionViewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1702,35 +1207,30 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0A3D43F60800B01E" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="adsf" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="DEBUGGABLE_DEVICE" value="0A3D43F60800B01E" />
     <property name="DEBUGGABLE_PROCESS" value="com.rsxsoftware.exceptionthrower" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ExceptionThrower" />
+    <property name="FullScreen" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.rsxsoftware.exceptionthrower" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Admin" />
-      <recent name="$PROJECT_DIR$/Insurance/res/drawable" />
-      <recent name="$PROJECT_DIR$/Insurance" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="com.rsxsoftware.insurance.view.bind" />
-      <recent name="com.rsxsoftware.insurance.view" />
-    </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.rsxsoftware.insurance.prefs.Prefs" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.rsxsoftware.insurance.view" />
-      <recent name="com.rsxsoftware.insurance.view.bind" />
+      <recent name="$USER_HOME$/Downloads/Backbone.TableView-master" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Exceptions" />
-      <recent name="$PROJECT_DIR$/ExceptionThrower/gradle/wrapper" />
+      <recent name="$PROJECT_DIR$/backbone-todojs-coffeescript-parse-gh-pages" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.ExceptionThrower">
@@ -1760,17 +1260,6 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <module name="Insurance" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1779,20 +1268,17 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Insurance/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="installDebug" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1820,19 +1306,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1895,7 +1368,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -1909,29 +1382,10 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Insurance Gradle" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Insurance/build.gradle" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="installDebug" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
-      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
-      <method />
-    </configuration>
-    <list size="4">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Android Application.Admin" />
       <item index="1" class="java.lang.String" itemvalue="Android Application.Insurance" />
       <item index="2" class="java.lang.String" itemvalue="Android Application.ExceptionThrower" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.Insurance Gradle" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1939,11 +1393,6 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SliceManager">
-    <option name="analysisUIOptions">
-      <AnalysisUIOptions />
-    </option>
-  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -1963,149 +1412,70 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9d2bbdb-a079-4d0c-8c3a-3735da453053" name="Default" comment="" />
-      <created>1387665331837</created>
-      <updated>1387665331837</updated>
+      <changelist id="610098ea-ec26-4983-80b7-c2a552d08a52" name="Default" comment="" />
+      <created>1388677306219</created>
+      <updated>1388677306219</updated>
     </task>
-    <task id="LOCAL-00001" summary="Save on server">
-      <created>1387668583283</created>
-      <updated>1387668583283</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Save on server">
-      <created>1387675528480</created>
-      <updated>1387675528480</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Initial commit&#10;">
-      <created>1387676180945</created>
-      <updated>1387676180945</updated>
-    </task>
-    <task id="LOCAL-00004" summary="deep save on server using js">
-      <created>1387683105190</created>
-      <updated>1387683105190</updated>
-    </task>
-    <task id="LOCAL-00005" summary="deep save on server using js&#10;">
-      <created>1387696185698</created>
-      <updated>1387696185698</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added login screen, used relations for many-to-many inv&lt;-&gt;room">
-      <created>1387813453197</created>
-      <updated>1387813453197</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Switched over to gradle build">
-      <created>1387850219835</created>
-      <updated>1387850219835</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Switched over to gradle build&#10;">
-      <created>1387859643072</created>
-      <updated>1387859643072</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Record location of photo then save in service">
-      <created>1387901970115</created>
-      <updated>1387901970115</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Autocomplete adapter now uses parseadatper&#10;">
-      <created>1388072862005</created>
-      <updated>1388072862005</updated>
-    </task>
-    <task id="LOCAL-00011" summary="CapturePhoto now encapsulated in class">
-      <created>1388129078689</created>
-      <updated>1388129078689</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Don't use save/delete eventually till its fixed">
-      <created>1388161781765</created>
-      <updated>1388161781765</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Don't use save/delete eventually till its fixed&#10;">
-      <created>1388163788355</created>
-      <updated>1388163788355</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Exception handling&#10;">
-      <created>1388683739997</created>
-      <updated>1388683739997</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1002" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1440" height="835" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28711486" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46153846" sideWeight="0.59585124" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5077139" sideWeight="0.44706723" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280543" sideWeight="0.55293274" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5022625" sideWeight="0.55293274" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29659212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42200556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32775453" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32775453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32635984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4409091" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5077139" sideWeight="0.44706723" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32775453" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29685265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28711486" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32635984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4409091" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46218488" sideWeight="0.59585124" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42200556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.55293274" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5022625" sideWeight="0.55293274" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32775453" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2120,21 +1490,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fix List Selector&#10;" />
-    <MESSAGE value="Save on server" />
-    <MESSAGE value="Initial commit&#10;" />
-    <MESSAGE value="deep save on server using js" />
-    <MESSAGE value="deep save on server using js&#10;" />
-    <MESSAGE value="Added login screen, used relations for many-to-many inv&lt;-&gt;room" />
-    <MESSAGE value="Switched over to gradle build" />
-    <MESSAGE value="Switched over to gradle build&#10;" />
-    <MESSAGE value="Record location of photo then save in service" />
-    <MESSAGE value="Autocomplete adapter now uses parseadatper&#10;" />
-    <MESSAGE value="CapturePhoto now encapsulated in class" />
-    <MESSAGE value="Don't use save/delete eventually till its fixed" />
-    <MESSAGE value="Don't use save/delete eventually till its fixed&#10;" />
-    <MESSAGE value="Exception handling&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception handling&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2144,307 +1499,287 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/business/ParseObjectFetch.java">
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
+        <state line="53" column="31" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="990">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/business/ParseObjectInterface.java">
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/LoginFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="63" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/CacheUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="56" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/business/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="825" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/InsuranceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="37" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/ListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="10" selection-start="2465" selection-end="2465" vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="1635">
+        <state line="36" column="36" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1425">
           <folding>
-            <element signature="e#2296#2806#0" expanded="false" />
-            <element signature="e#2787#2788#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3392#3400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/ContentFragment.java">
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="47" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1155" />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/sources/android-19/android/widget/ImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="13" selection-start="2354" selection-end="2354" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="18030" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Insurance/libs/Parse-1.3.9.jar!/com/parse/ParseImageView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="495" />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/sources/android-19/android/widget/ImageButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="13" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="1350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/res/layout/fragment_container.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/res/layout/list_row.xml">
-      <provider editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="615" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-mdpi/ic_menu_save.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-ldpi/ic_menu_save.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-xhdpi/ic_menu_save.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-xxhdpi/ic_menu_save.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/res/drawable/ic_menu_refresh.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-hdpi/ic_menu_save.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-hdpi/ic_menu_edit.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/platforms/android-19/data/res/drawable-hdpi/ic_delete.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/PopupView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/YesNoAlertDialogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="795" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/insurance.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
+        <state line="53" column="31" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/admin.sh">
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="43" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105" />
+        <state line="36" column="36" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1425">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3392#3400#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/Header.java">
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="28" selection-start="4047" selection-end="4047" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2265">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="31" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/ListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="43" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="3360">
+        <state line="36" column="36" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1425">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3392#3400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="31" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/src/com/rsxsoftware/Admin/AdminActivity.java">
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="56" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="2025">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/view/UserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="31" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/local.properties">
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/ExceptionCatcher.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/samples/android-19/ui/ActionBarCompat-Basic/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="90" selection-start="638" selection-end="638" vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="1440">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/ExceptionThrower/gen/com/rsxsoftware/exceptionthrower/R.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/bin/idea.properties">
+    <entry file="file://$PROJECT_DIR$/ExceptionThrower/ExceptionCatcher.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+        <state line="16" column="67" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/build.gradle">
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="690">
+        <state line="5" column="91" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
+        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/build.gradle">
+    <entry file="file://$PROJECT_DIR$/RsxSoftware.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="29" selection-start="308" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/bin/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="68" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/Todo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exceptions/js/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="105" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ThrowExceptionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding>
-            <element signature="e#615#616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Insurance/src/com/rsxsoftware/exceptionthrower/ParseFilesSaveService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.0" vertical-offset="388" max-vertical-offset="1395">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1022#1030#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$ANDROID_HOME$/sources/android-19/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1109" column="13" selection-start="37316" selection-end="37316" vertical-scroll-proportion="0.5533981" vertical-offset="15612" max-vertical-offset="18510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="35" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.0" vertical-offset="479" max-vertical-offset="1335">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ExceptionThrower/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="582" selection-end="582" vertical-scroll-proportion="0.45882353" vertical-offset="0" max-vertical-offset="585">
+        <state line="17" column="27" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="585">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="76" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Zonar2020/Fips/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="6" selection-start="1123" selection-end="1297" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="3" selection-start="690" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionThrower/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="36" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Backbone.TableView-master/backbone.tableview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Backbone.TableView-master/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="48" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Backbone.TableView-master/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="84" selection-end="84" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Backbone.TableView-master/backbone.tableview.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="402" column="0" selection-start="14843" selection-end="14843" vertical-scroll-proportion="0.0" vertical-offset="5475" max-vertical-offset="7155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionThrower/src/com/rsxsoftware/exceptionthrower/ThrowExceptionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/ApplicationLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="30" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1860">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3392#3400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionCatcher/src/com/rsxsoftware/exceptionthrower/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionViewer/backbone-parse.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionViewer/exceptions.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="11" selection-start="3921" selection-end="3928" vertical-scroll-proportion="-8.192307" vertical-offset="2367" max-vertical-offset="4875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionViewer/exceptions.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="675" selection-end="676" vertical-scroll-proportion="-8.038462" vertical-offset="1" max-vertical-offset="3570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExceptionViewer/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="620" selection-end="620" vertical-scroll-proportion="0.11923689" vertical-offset="180" max-vertical-offset="1530">
+          <folding>
+            <marker date="1388890410000" expanded="true" signature="1624:1976" placeholder="..." />
+            <marker date="1388890410000" expanded="true" signature="1654:1856" placeholder="..." />
+            <marker date="1388890410000" expanded="true" signature="1883:1963" placeholder="..." />
+            <marker date="1388890410000" expanded="true" signature="2109:2263" placeholder="..." />
+            <marker date="1388890410000" expanded="true" signature="2340:2546" placeholder="..." />
+            <marker date="1388890410000" expanded="true" signature="2363:2530" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2489,7 +1824,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 19 Platform</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2501,7 +1836,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>RsxSoftware</last-edited>
+          <last-edited>ExceptionThrower</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2525,7 +1860,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Parse-1.3.9</last-edited>
+          <last-edited>commons-io-2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

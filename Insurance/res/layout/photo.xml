@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.rsxsoftware.insurance.view.PhotoLayout
+<com.rsxsoftware.exceptionthrower.view.PhotoLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="100dip"
         android:layout_height="100dip"
@@ -36,4 +36,4 @@
             android:layout_marginBottom="10dp"
             />
 
-</com.rsxsoftware.insurance.view.PhotoLayout>
+</com.rsxsoftware.exceptionthrower.view.PhotoLayout>

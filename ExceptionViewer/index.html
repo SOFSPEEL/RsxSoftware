@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Backbone Demo: Exceptions in CoffeeScript</title>
+    <link href="exceptions.css" media="all" rel="stylesheet" type="text/css"/>
+
+    <script type="text/coffeescript" src="backbone-parse.coffee"></script>
+    <script type="text/coffeescript" src="exceptions.coffee"></script>
+
+    <script src="lib/json2.js"></script>
+    <script src="lib/jquery-1.5.js"></script>
+    <script src="lib/underscore-1.1.6.js"></script>
+    <script src="lib/backbone.js"></script>
+    <script src="lib/backbone-localstorage.js"></script>
+    <script src="lib/coffee-script.js"></script>
+  </head>
+
+  <body>
+
+    <a href="https://github.com/codebutler/backbone-exceptionjs-coffeescript-parse"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <!-- Exception App Interface -->
+
+    <div id="exceptionapp">
+
+      <div class="title">
+        <h1>Exceptions</h1>
+        <h3>in CoffeeScript using Parse.com</h3>
+      </div>
+
+      <div class="content">
+
+        <div id="create-exception">
+          <input id="new-exception" placeholder="What needs to be done?" type="text" />
+          <span class="ui-tooltip-top" style="display:none;">Press Enter to save this task</span>
+        </div>
+
+        <div id="exceptions">
+          <ul id="exception-list"></ul>
+        </div>
+
+        <div id="exception-stats"></div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Templates -->
+
+    <script type="text/template" id="item-template">
+      <div class="exception <%= done ? 'done' : '' %>">
+        <div class="display">
+          <input class="check" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+          <div class="exception-message"></div>
+          <span class="exception-destroy"></span>
+        </div>
+        <div class="edit">
+          <input class="exception-input" type="text" value="" />
+        </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="stats-template">
+      <% if (total) { %>
+        <span class="exception-count">
+          <span class="number"><%= remaining %></span>
+          <span class="word"><%= remaining == 1 ? 'item' : 'items' %></span> left.
+        </span>
+      <% } %>
+      <% if (done) { %>
+        <span class="exception-clear">
+          <a href="#">
+            Clear <span class="number-done"><%= done %></span>
+            completed <span class="word-done"><%= done == 1 ? 'item' : 'items' %></span>
+          </a>
+        </span>
+      <% } %>
+    </script>
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8200340-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+  </body>
+</html>

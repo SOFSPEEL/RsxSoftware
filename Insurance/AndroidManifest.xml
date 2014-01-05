@@ -15,11 +15,11 @@
     <application
             android:theme="@android:style/Theme.Light"
             android:label="@string/app_name"
-            android:name=".InsuranceApplication"
+            android:name="com.rsxsoftware.exceptionthrower.InsuranceApplication"
             >
 
         <activity
-                android:name=".view.UserActivity"
+                android:name="com.rsxsoftware.exceptionthrower.view.UserActivity"
                 android:configChanges="keyboardHidden|orientation"
                 >
             <intent-filter>
@@ -30,6 +30,6 @@
         </activity>
 
 
-        <service android:name=".ParseFilesSaveService"/>
+        <service android:name="com.rsxsoftware.exceptionthrower.ParseFilesSaveService"/>
     </application>
 </manifest>
